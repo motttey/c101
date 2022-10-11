@@ -1,0 +1,5 @@
+{
+    content: [
+        '/*.{html,js, vue}'
+    ] 
+}
