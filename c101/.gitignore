@@ -1,3 +1,4 @@
+# nuxt3 settings
 node_modules
 *.log*
 .nuxt
@@ -6,3 +7,6 @@ node_modules
 .output
 .env
 dist
+
+# editor settings
+.vscode
