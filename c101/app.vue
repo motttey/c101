@@ -9,14 +9,25 @@
         />
       </div>
       <div class="p-6 items-center align-middle	space-x-4 m-auto">
-        <p class="text-8xl">TailWind.css</p>
-        <p class="text-8xl">AAA</p>
+        <p class="text-8xl">ほげほげ合同誌</p>
       </div>
     </div>
   </div>
   <div class="flex flex-row min-h-screen justify-center items-center">
-    <div class="p-6 grid grid-cols-4 gap-4">
+    <div class="p-6 grid grid-cols-1 gap-4">
       <div class="space-x-4" v-for="d in arr" v-bind:key="d.id"> {{ d.name }}</div>
+    </div>
+    <div class="p-6 space-x-4">
+      <carousel class="min-h-screen" :items-to-show="1">
+        <slide v-for="d in arr" v-bind:key="d.id">
+          <p class="text-8xl">{{d.name}}</p>
+        </slide>
+
+        <template #addons>
+          <navigation />
+          <pagination />
+        </template>
+      </carousel>
     </div>
   </div>
   <div class="flex flex-row min-h-screen justify-center items-center">
@@ -27,7 +38,15 @@
 </template>
 
 <script lang="ts">
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
+
 export default defineComponent({
+  components: {
+    Carousel,
+    Slide,
+    Pagination,
+    Navigation 
+  },
   async setup() {
     const arr = [
        {
