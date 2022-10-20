@@ -4,31 +4,32 @@
       <div class="items-center text-center space-x-4">
         <img 
           class="object-cover min-h-screen"
-           src="https://motttey.github.io/perfectblue.jpg" 
-           alt="cover"
+          src="https://motttey.github.io/perfectblue.jpg" 
+          alt="cover"
         />
       </div>
       <div class="p-6 items-center align-middle	space-x-4 m-auto">
         <p class="text-8xl">ほげほげ合同誌</p>
       </div>
     </div>
+    <!-- 次のコンテンツをボタンで表示する -->
   </div>
   <div class="flex flex-row min-h-screen justify-center items-center">
-    <div class="p-6 grid grid-cols-1 gap-4">
-      <div class="space-x-4" v-for="d in arr" v-bind:key="d.id"> {{ d.name }}</div>
-    </div>
-    <div class="p-6 space-x-4">
-      <carousel class="min-h-screen" :items-to-show="1">
+    <carousel 
+        :itemsToShow="1"
+        :itemsToScroll="1"
+        :autoplay="1000"
+      >
         <slide v-for="d in arr" v-bind:key="d.id">
-          <p class="text-8xl">{{d.name}}</p>
+          <div><p class="text-8xl">{{d.name}}</p></div>
         </slide>
-
+        <!--
         <template #addons>
           <navigation />
           <pagination />
         </template>
-      </carousel>
-    </div>
+        -->
+    </carousel>
   </div>
   <div class="flex flex-row min-h-screen justify-center items-center">
     <div class="p-6 items-center space-x-4">
