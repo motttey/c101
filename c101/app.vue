@@ -18,18 +18,20 @@
     <carousel 
         :itemsToShow="1"
         :itemsToScroll="1"
-        :autoplay="1000"
       >
         <slide v-for="d in arr" v-bind:key="d.id">
-          <div><p class="text-8xl">{{d.name}}</p></div>
+            <p class="text-8xl">{{d.name}}</p>
+            <img 
+              class="object-cover min-h-screen"
+              src="https://motttey.github.io/perfectblue.jpg" 
+              alt="cover"
+            />
         </slide>
-        <!--
         <template #addons>
           <navigation />
           <pagination />
         </template>
-        -->
-    </carousel>
+      </carousel>
   </div>
   <div class="flex flex-row min-h-screen justify-center items-center">
     <div class="p-6 items-center space-x-4">
