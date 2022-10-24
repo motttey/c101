@@ -15,23 +15,14 @@
     <!-- 次のコンテンツをボタンで表示する -->
   </div>
   <div class="flex flex-row min-h-screen justify-center items-center">
-    <carousel 
-        :itemsToShow="1"
-        :itemsToScroll="1"
-      >
-        <slide v-for="d in arr" v-bind:key="d.id">
-            <p class="text-8xl">{{d.name}}</p>
-            <img 
-              class="object-cover min-h-screen"
-              src="https://motttey.github.io/perfectblue.jpg" 
-              alt="cover"
-            />
-        </slide>
-        <template #addons>
-          <navigation />
-          <pagination />
-        </template>
-      </carousel>
+    <div v-for="d in arr" v-bind:key="d.id">
+      <p class="text-8xl">{{d.name}}</p>
+      <img 
+        class="object-cover min-h-screen"
+        src="https://motttey.github.io/perfectblue.jpg" 
+        alt="cover"
+      />
+    </div>
   </div>
   <div class="flex flex-row min-h-screen justify-center items-center">
     <div class="p-6 items-center space-x-4">
@@ -41,15 +32,7 @@
 </template>
 
 <script lang="ts">
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
-
 export default defineComponent({
-  components: {
-    Carousel,
-    Slide,
-    Pagination,
-    Navigation 
-  },
   async setup() {
     const arr = [
        {
