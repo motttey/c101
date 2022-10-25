@@ -12,16 +12,26 @@
         <p class="text-8xl">ほげほげ合同誌</p>
       </div>
     </div>
-    <!-- 次のコンテンツをボタンで表示する -->
   </div>
   <div class="flex flex-row min-h-screen justify-center items-center">
-    <div v-for="d in arr" v-bind:key="d.id">
-      <p class="text-8xl">{{d.name}}</p>
-      <img 
-        class="object-cover min-h-screen"
-        src="https://motttey.github.io/perfectblue.jpg" 
-        alt="cover"
-      />
+    <div class="grid grid-cols-4 gap-4">
+      <div class="max-w-sm m-7 rounded overflow-hidden shadow-lg" v-for="d in arr" v-bind:key="d.id">
+        <img 
+            class="w-full"
+            src="https://motttey.github.io/perfectblue.jpg" 
+            alt="cover"
+          />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">{{d.name}}</div>
+          <p class="text-gray-700 text-base">
+          説明文
+          </p>
+        </div>
+        <div class="px-6 pt-4 pb-2">
+          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Twitter</span>
+          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Pixiv</span>
+        </div>
+      </div>
     </div>
   </div>
   <div class="flex flex-row min-h-screen justify-center items-center">
