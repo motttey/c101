@@ -49,8 +49,17 @@
     </div>
   </div>
   <div class="flex flex-row min-h-screen justify-center items-center">
-    <div class="self-end space-y-4">
-      <p class="text-1xl inline-block align-bottom">© 2022 Tagosaku Mochiduki</p>
+    <div class="items-center align-middle">
+      <iframe 
+        class="w-screen h-screen"
+        id="mapInlineFrame"
+        src="https://main--relaxed-lovelace-59e029.netlify.app/"
+        frameborder="0"
+      >
+      </iframe>.
+      <div class="self-end space-y-4">
+        <p class="text-1xl inline-block align-bottom">© 2022 Tagosaku Mochiduki</p>
+      </div>
     </div>
   </div>
 </template>
