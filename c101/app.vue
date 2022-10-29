@@ -9,9 +9,12 @@
         />
       </div>
       <div class="p-6 items-center align-middle	space-x-4 m-auto">
-        <p class="text-6xl">藤子不二雄<br>オマージュマガジン</p>
+        <p class="text-4xl">藤子不二雄<br>オマージュマガジン</p>
         <p class="text-9xl">F.S</p>
         <p class="text-4xl">Fujiko Spirits</p>
+        <p class="text-justify ...">
+          説明
+        </p>
       </div>
     </div>
   </div>
@@ -50,6 +53,9 @@
   </div>
   <div class="flex flex-row min-h-screen justify-center items-center">
     <div class="items-center align-middle">
+      <div class="absolute top-5 left-5 right-5">
+        <p class="text-6xl text-white">2022/12/XX 東京ビッグサイト</p>
+      </div>
       <iframe 
         class="w-screen h-screen"
         id="mapInlineFrame"
