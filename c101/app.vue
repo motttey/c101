@@ -9,7 +9,7 @@
         />
       </div>
       <div class="p-6 items-center align-middle	space-x-4 m-auto">
-        <p class="text-4xl">藤子不二雄<br>オマージュマガジン</p>
+        <p class="text-4xl">藤子不二雄オマージュマガジン</p>
         <p class="text-9xl">F.S</p>
         <p class="text-4xl">Fujiko Spirits</p>
         <p class="text-justify ...">
@@ -53,11 +53,11 @@
   </div>
   <div class="flex flex-row min-h-screen justify-center items-center">
     <div class="items-center align-middle">
-      <div class="absolute top-5 left-5 right-5">
+      <div class="relative top-48 left-5 right-5">
         <p class="text-6xl text-white">2022/12/XX 東京ビッグサイト</p>
       </div>
       <iframe 
-        class="w-screen h-screen"
+        class="w-screen h-screen pointer-events-none"
         id="mapInlineFrame"
         src="https://main--relaxed-lovelace-59e029.netlify.app/"
         frameborder="0"
