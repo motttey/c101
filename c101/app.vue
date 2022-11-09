@@ -20,7 +20,7 @@
   </div>
   <div class="flex flex-row min-h-screen justify-center items-center">
     <div class="p-4 items-center align-middle	space-x-4 m-auto">
-        <p class="text-8xl">説明</p>
+        <p class="text-8xl">{{arr[currentIndex].description}}</p>
     </div>
     <div class="p-4 items-center align-middle	space-x-4 m-auto">
       <div 
@@ -41,7 +41,7 @@
           <div class="px-6 py-4">
             <div class="font-bold text-xl mb-2">{{d.name}}</div>
             <p class="text-gray-700 text-base">
-            説明文
+              {{d.description}}
             </p>
           </div>
           <div class="px-6 pt-4 pb-2">
@@ -78,45 +78,54 @@ export default defineComponent({
     const arr = [
        {
         "id": 1,
-        "name": "望月田吾作1"
+        "name": "望月田吾作1",
+        "description": "説明1"
        },
        {
         "id": 2,
-        "name": "望月田吾作2"
+        "name": "望月田吾作2",
+        "description": "説明2"
        },
        {
         "id": 3,
-        "name": "望月田吾作3"
+        "name": "望月田吾作3",
+        "description": "説明3"
        },
        {
         "id": 4,
-        "name": "望月田吾作4"
+        "name": "望月田吾作4",
+        "description": "説明4"
        },       
        {
         "id": 5,
-        "name": "望月田吾作5"
+        "name": "望月田吾作5",
+        "description": "説明5"
        },
        {
         "id": 6,
-        "name": "望月田吾作6"
+        "name": "望月田吾作6",
+        "description": "説明6"
        },
        {
         "id": 7,
-        "name": "望月田吾作7"
+        "name": "望月田吾作7",
+        "description": "説明7"
        },
        {
         "id": 8,
-        "name": "望月田吾作8"
+        "name": "望月田吾作8",
+        "description": "説明8"
        },
        {
         "id": 9,
-        "name": "望月田吾作9"
+        "name": "望月田吾作9",
+        "description": "説明9"
        }
     ]
 
     const handleKeyLeft = () => {
       console.log("left");
-      if (currentIndex.value < arr.length) {
+      if (currentIndex.value < arr.length - 1) {
         currentIndex.value++
       } else {
         currentIndex.value = 0
