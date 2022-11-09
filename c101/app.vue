@@ -26,6 +26,7 @@
       <div 
         class="grid grid-cols-1 items-center align-middle"
         v-for="(d, index) in arr"
+        @click="handleKeyLeft"
         v-bind:key="d.id"
       >
         <div class=
@@ -73,7 +74,7 @@
 <script lang="ts">
 export default defineComponent({
   async setup() {
-    const currentIndex = 0
+    const currentIndex = ref(0)
     const arr = [
        {
         "id": 1,
@@ -112,9 +113,30 @@ export default defineComponent({
         "name": "望月田吾作9"
        }
     ]
+
+    const handleKeyLeft = () => {
+      console.log("left");
+      if (currentIndex.value < arr.length) {
+        currentIndex.value++
+      } else {
+        currentIndex.value = 0
+      }
+    }
+    
+    /*
+    const handleKeyRight = () => {
+      if (currentIndex.value > 0) {
+        currentIndex.value--
+      } else {
+        currentIndex.value = arr.length - 1
+      }
+    }
+    */
+    
     return {
       arr,
-      currentIndex
+      currentIndex,
+      handleKeyLeft,
     }
   },
 })
