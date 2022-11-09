@@ -22,26 +22,26 @@
     <div class="p-4 items-center align-middle	space-x-4 m-auto">
         <p class="text-8xl">{{arr[currentIndex].description}}</p>
     </div>
-    <div class="p-4 items-center align-middle	space-x-4 m-auto">
+    <div class="p-4 items-center align-middle m-auto">
       <div 
         class="grid grid-cols-1 items-center align-middle"
-        v-for="(d, index) in arr"
+        v-for="(index) in currentIndexRange"
         @click="handleKeyLeft"
-        v-bind:key="d.id"
+        v-bind:key="index"
       >
         <div class=
           "max-w-sm m-7 rounded overflow-hidden shadow-lg" 
-          v-if="index === currentIndex"
+          :class="{'opacity-50': index !== currentIndex}"
         >
           <img 
               class="w-full"
               src="https://motttey.github.io/perfectblue.jpg" 
               alt="cover"
             />
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">{{d.name}}</div>
+          <div class="m-7">
+            <div class="font-bold text-xl mb-2">{{arr[index].name}}</div>
             <p class="text-gray-700 text-base">
-              {{d.description}}
+              {{arr[index].description}}
             </p>
           </div>
           <div class="px-6 pt-4 pb-2">
@@ -122,7 +122,7 @@ export default defineComponent({
         "description": "説明9"
        }
     ]
-
+    
     const handleKeyLeft = () => {
       console.log("left");
       if (currentIndex.value < arr.length - 1) {
@@ -132,6 +132,21 @@ export default defineComponent({
       }
     }
     
+    const currentIndexRange = computed(() => {
+      const retVal = []
+      const minus = currentIndex.value - 1;
+      const plus = currentIndex.value + 1;
+
+      if (minus >= 0) retVal.push(minus);
+      else retVal.push(arr.length - 1)
+
+      retVal.push(currentIndex.value)
+
+      if (plus < arr.length) retVal.push(plus);
+      else retVal.push(0)
+      // for (let i = 0; i < arr.length; i++) { }
+      return retVal;
+    })
     /*
     const handleKeyRight = () => {
       if (currentIndex.value > 0) {
@@ -145,6 +160,7 @@ export default defineComponent({
     return {
       arr,
       currentIndex,
+      currentIndexRange,
       handleKeyLeft,
     }
   },
