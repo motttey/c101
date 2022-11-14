@@ -55,7 +55,8 @@
   <div class="flex flex-row min-h-screen justify-center items-center">
     <div class="items-center align-middle">
       <div class="relative top-48 left-5 right-5">
-        <p class="text-6xl text-white">2022/12/XX 東京ビッグサイト</p>
+        <p class="text-6xl text-white">2022/12/30 (金) 東京ビッグサイト</p>
+        <p class="text-4xl text-white">東ハ50a</p>
       </div>
       <iframe 
         class="w-screen h-screen pointer-events-none"
