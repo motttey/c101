@@ -1,5 +1,25 @@
 <template>
-  <div class="flex flex-row min-h-screen justify-center items-center h-screen">
+  <div
+      ref="scrollTopButton"
+      class="absolute w-full flex justify-end bottom-0 pb-3 pr-5 transition"
+  >
+      <div
+          class="text-gray-400 hover:text-blue-400 transition"
+      >
+          <button>
+              Scroll to top
+          </button>
+      </div>
+  </div>
+  <div class="
+    flex
+    flex-row
+    min-h-screen
+    justify-center
+    items-center
+    h-screen
+    scroll-smooth
+  ">
     <div class="h-screen grid grid-cols-2">
       <div class="items-center text-center space-x-4">
         <img 
