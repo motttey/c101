@@ -65,8 +65,12 @@
             </p>
           </div>
           <div class="px-6 pt-4 pb-2">
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Twitter</span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Pixiv</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              <a :href="arr[index].twitter">Twitter</a>
+            </span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              <a :href="arr[index].pixiv">Pixiv</a>
+            </span>
           </div>
         </div>
       </div>
@@ -100,47 +104,65 @@ export default defineComponent({
        {
         "id": 1,
         "name": "望月田吾作1",
-        "description": "説明1"
+        "description": "説明1",
+        "twitter": "https://twitter.com/mt_tg",
+        "pixiv": "https://www.pixiv.net/users/415546"
        },
        {
         "id": 2,
         "name": "望月田吾作2",
-        "description": "説明2"
+        "description": "説明2",
+        "twitter": "https://twitter.com/mt_tg",
+        "pixiv": "https://www.pixiv.net/users/415546"
        },
        {
         "id": 3,
         "name": "望月田吾作3",
-        "description": "説明3"
+        "description": "説明3",
+        "twitter": "https://twitter.com/mt_tg",
+        "pixiv": "https://www.pixiv.net/users/415546"
        },
        {
         "id": 4,
         "name": "望月田吾作4",
-        "description": "説明4"
+        "description": "説明4",
+        "twitter": "https://twitter.com/mt_tg",
+        "pixiv": "https://www.pixiv.net/users/415546"
        },       
        {
         "id": 5,
         "name": "望月田吾作5",
-        "description": "説明5"
+        "description": "説明5",
+        "twitter": "https://twitter.com/mt_tg",
+        "pixiv": "https://www.pixiv.net/users/415546"
        },
        {
         "id": 6,
         "name": "望月田吾作6",
-        "description": "説明6"
+        "description": "説明6",
+        "twitter": "https://twitter.com/mt_tg",
+        "pixiv": "https://www.pixiv.net/users/415546"
        },
        {
         "id": 7,
         "name": "望月田吾作7",
-        "description": "説明7"
+        "description": "説明7",
+        "twitter": "https://twitter.com/mt_tg",
+        "pixiv": "https://www.pixiv.net/users/415546"
        },
        {
         "id": 8,
         "name": "望月田吾作8",
-        "description": "説明8"
+        "description": "説明8",
+        "twitter": "https://twitter.com/mt_tg",
+        "pixiv": "https://www.pixiv.net/users/415546"
        },
        {
         "id": 9,
         "name": "望月田吾作9",
-        "description": "説明9"
+        "description": "説明9",
+        "twitter": "https://twitter.com/mt_tg",
+        "pixiv": "https://www.pixiv.net/users/415546"
        }
     ]
     
