@@ -38,8 +38,8 @@
       </div>
     </div>
   </div>
-  <div class="flex flex-row min-h-screen justify-center items-center">
-    <div class="p-4 items-center align-middle	space-x-4 m-auto">
+  <div class="flex flex-row h-screen overflow-hidden justify-center items-center">
+    <div class="items-center align-middle m-auto">
         <p class="text-8xl">{{arr[currentIndex].description}}</p>
     </div>
     <div class="p-4 items-center align-middle m-auto">
@@ -187,7 +187,6 @@ export default defineComponent({
 
       if (plus < arr.length) retVal.push(plus);
       else retVal.push(0)
-      // for (let i = 0; i < arr.length; i++) { }
       return retVal;
     })
     /*
