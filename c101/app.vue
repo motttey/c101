@@ -1,12 +1,12 @@
 <template>
   <div
       ref="scrollTopButton"
-      class="absolute w-full flex justify-end bottom-0 pb-3 pr-5 transition"
+      class="fixed w-full flex justify-end bottom-0 pb-3 pr-5 transition"
   >
       <div
           class="text-gray-400 hover:text-blue-400 transition"
       >
-          <button>
+          <button v-on:click="scrollToTop">
               Scroll to top
           </button>
       </div>
@@ -88,7 +88,7 @@
         src="https://main--relaxed-lovelace-59e029.netlify.app/"
         frameborder="0"
       >
-      </iframe>.
+      </iframe>
       <div class="self-end space-y-4">
         <p class="text-1xl inline-block align-bottom">© 2022 Tagosaku Mochiduki</p>
       </div>
@@ -189,6 +189,7 @@ export default defineComponent({
       else retVal.push(0)
       return retVal;
     })
+
     /*
     const handleKeyRight = () => {
       if (currentIndex.value > 0) {
@@ -199,10 +200,17 @@ export default defineComponent({
     }
     */
     
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
+    }
     return {
       arr,
       currentIndex,
       currentIndexRange,
+      scrollToTop,
       handleKeyLeft,
     }
   },
