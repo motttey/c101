@@ -28,10 +28,12 @@
           alt="cover"
         />
       </div>
-      <div class="p-6 items-center align-middle	space-x-4 m-auto">
-        <p class="text-4xl">藤子不二雄オマージュマガジン</p>
-        <p class="text-9xl">F.S</p>
-        <p class="text-4xl">Fujiko Spirits</p>
+      <div class="p-6 items-center align-middle">
+        <h2 class="text-4xl">藤子不二雄<br>オマージュマガジン</h2>
+        <h1>
+          <span class="text-[128px]">FS</span>
+          <span class="text-3xl">フジコ・スピリット</span>
+          </h1>
         <p class="text-justify ...">
           説明
         </p>
