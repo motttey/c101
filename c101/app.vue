@@ -6,7 +6,9 @@
       <div
           class="text-gray-400 hover:text-blue-400 transition"
       >
-          <button v-on:click="scrollToTop">
+          <button 
+            v-on:click="scrollToTop"
+          >
               Scroll to top
           </button>
       </div>
@@ -39,6 +41,18 @@
         </p>
       </div>
     </div>
+    <div
+      ref="scrollToNextSectionButton"
+      class="absolute w-full flex justify-start bottom-0 pb-3 pr-5 transition"
+  >
+      <div
+          class="text-gray-400 hover:text-blue-400 transition"
+      >
+          <button>
+              Next-Section
+          </button>
+      </div>
+  </div>
   </div>
   <div class="flex flex-row h-screen overflow-hidden justify-center items-center">
     <div class="items-center align-middle m-auto">
@@ -191,16 +205,6 @@ export default defineComponent({
       else retVal.push(0)
       return retVal;
     })
-
-    /*
-    const handleKeyRight = () => {
-      if (currentIndex.value > 0) {
-        currentIndex.value--
-      } else {
-        currentIndex.value = arr.length - 1
-      }
-    }
-    */
     
     const scrollToTop = () => {
       window.scrollTo({
