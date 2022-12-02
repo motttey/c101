@@ -13,15 +13,18 @@
           </button>
       </div>
   </div>
-  <div class="
-    flex
-    flex-row
-    min-h-screen
-    justify-center
-    items-center
-    h-screen
-    scroll-smooth
-  ">
+  <div 
+    class="
+      flex
+      flex-row
+      min-h-screen
+      justify-center
+      items-center
+      h-screen
+      scroll-smooth
+    "
+    id="abstract"
+  >
     <div class="h-screen grid grid-cols-2">
       <div class="items-center text-center space-x-4">
         <img 
@@ -42,19 +45,22 @@
       </div>
     </div>
     <div
-      ref="scrollToNextSectionButton"
       class="absolute w-full flex justify-start bottom-0 pb-3 pr-5 transition"
-  >
-      <div
-          class="text-gray-400 hover:text-blue-400 transition"
+    >
+      <a
+        class="text-gray-400 hover:text-blue-400 transition"
+        href="#authors"
       >
           <button>
               Next-Section
           </button>
-      </div>
+        </a>
+    </div>
   </div>
-  </div>
-  <div class="flex flex-row h-screen overflow-hidden justify-center items-center">
+  <div 
+    class="flex flex-row h-screen overflow-hidden justify-center items-center"
+    id="authors"
+  >
     <div class="items-center align-middle m-auto">
         <p class="text-8xl">{{arr[currentIndex].description}}</p>
     </div>
@@ -91,8 +97,23 @@
         </div>
       </div>
     </div>
+    <div
+      class="absolute w-full flex justify-start bottom-0 pb-3 pr-5 transition"
+    >
+      <a
+        class="text-gray-400 hover:text-blue-400 transition"
+        href="#access"
+      >
+          <button>
+              Next-Section
+          </button>
+        </a>
+    </div>
   </div>
-  <div class="flex flex-row min-h-screen justify-center items-center">
+  <div 
+    class="flex flex-row min-h-screen justify-center items-center"
+    id="access"
+  >
     <div class="items-center align-middle">
       <div class="relative top-48 left-5 right-5">
         <p class="text-6xl text-white">2022/12/30 (金) 東京ビッグサイト</p>
