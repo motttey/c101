@@ -13,98 +13,92 @@
           </button>
       </div>
   </div>
-  <div 
-    class="
-      flex
-      flex-row
-      min-h-screen
-      justify-center
-      items-center
-      h-screen
-      scroll-smooth
-    "
-    id="abstract"
-  >
-    <div class="h-screen grid grid-cols-2">
-      <div class="items-center text-center space-x-4">
-        <img 
-          class="object-cover min-h-screen"
-          src="https://motttey.github.io/perfectblue.jpg" 
-          alt="cover"
-        />
-      </div>
-      <div class="p-6 items-center align-middle">
-        <h2 class="text-4xl">藤子不二雄<br>オマージュマガジン</h2>
-        <h1>
-          <span class="text-[128px]">FS</span>
-          <span class="text-3xl">フジコ・スピリット</span>
-          </h1>
-        <p class="text-justify ...">
-          説明
-        </p>
-      </div>
-    </div>
-    <div
-      class="absolute w-full flex justify-start bottom-0 pb-3 pr-5 transition"
+  <div class="min-h-screen h-screen scroll-smooth">
+    <div 
+      class="flex flex-row justify-center items-center"
+      id="abstract"
     >
-      <a
-        class="text-gray-400 hover:text-blue-400 transition"
-        href="#authors"
-      >
+      <div class="h-screen grid grid-cols-2">
+        <div class="items-center text-center space-x-4">
+          <img 
+            class="object-cover min-h-screen"
+            src="https://motttey.github.io/perfectblue.jpg" 
+            alt="cover"
+          />
+        </div>
+        <div class="p-6 items-center align-middle">
+          <h2 class="text-4xl">藤子不二雄<br>オマージュマガジン</h2>
+          <h1>
+            <span class="text-[128px]">FS</span>
+            <span class="text-3xl">フジコ・スピリット</span>
+            </h1>
+          <p class="text-justify ...">
+            説明
+          </p>
+        </div>
+      </div>
+      <div class="absolute inset-x-0 bottom-0 pb-3 pr-5 transition">
+        <a
+          class="text-gray-400 hover:text-blue-400 transition"
+          href="#authors"
+        >
           <button>
               Next-Section
           </button>
         </a>
+      </div>
     </div>
   </div>
-  <div 
-    class="flex flex-row h-screen overflow-hidden justify-center items-center"
-    id="authors"
-  >
-    <div class="items-center align-middle m-auto">
-        <p class="text-8xl">{{arr[currentIndex].description}}</p>
-    </div>
-    <div class="p-4 items-center align-middle m-auto">
-      <div 
-        class="grid grid-cols-1 items-center align-middle"
-        v-for="(index) in currentIndexRange"
-        @click="handleKeyLeft"
-        v-bind:key="index"
-      >
-        <div class=
-          "max-w-sm m-7 rounded overflow-hidden shadow-lg" 
-          :class="{'opacity-50': index !== currentIndex}"
+  <div class="min-h-screen h-screen scroll-smooth">
+    <div 
+      class="flex flex-row justify-center items-center"
+      id="authors"
+    >
+      <div class="items-center align-middle m-auto">
+          <p class="text-8xl">{{arr[currentIndex].description}}</p>
+      </div>
+      <div class="p-4 items-center align-middle m-auto">
+        <div 
+          class="grid grid-cols-1 items-center align-middle"
+          v-for="(index) in currentIndexRange"
+          @click="handleKeyLeft"
+          v-bind:key="index"
         >
-          <img 
-              class="w-full"
-              src="https://motttey.github.io/perfectblue.jpg" 
-              alt="cover"
-            />
-          <div class="m-7">
-            <div class="font-bold text-xl mb-2">{{arr[index].name}}</div>
-            <p class="text-gray-700 text-base">
-              {{arr[index].description}}
-            </p>
-          </div>
-          <div class="px-6 pt-4 pb-2">
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              <a :href="arr[index].twitter">Twitter</a>
-            </span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              <a :href="arr[index].pixiv">Pixiv</a>
-            </span>
+          <div class=
+            "max-w-sm m-7 rounded overflow-hidden shadow-lg" 
+            :class="{'opacity-50': index !== currentIndex}"
+          >
+            <img 
+                class="w-full"
+                src="https://motttey.github.io/perfectblue.jpg" 
+                alt="cover"
+              />
+            <div class="m-7">
+              <div class="font-bold text-xl mb-2">{{arr[index].name}}</div>
+              <p class="text-gray-700 text-base">
+                {{arr[index].description}}
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                <a :href="arr[index].twitter">Twitter</a>
+              </span>
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                <a :href="arr[index].pixiv">Pixiv</a>
+              </span>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div
-      class="absolute w-full flex justify-start bottom-0 pb-3 pr-5 transition"
+      class="absolute inset-x-0 bottom-0 pb-3 pr-5 transition"
     >
       <a
         class="text-gray-400 hover:text-blue-400 transition"
         href="#access"
       >
-          <button>
+          <button class="rounded-full">
               Next-Section
           </button>
         </a>
