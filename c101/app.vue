@@ -49,23 +49,18 @@
       </div>
     </div>
   </div>
-  <div class="min-h-screen h-screen scroll-smooth">
+  <div class="scroll-smooth">
     <div 
-      class="flex flex-row justify-center items-center"
       id="authors"
     >
-      <div class="items-center align-middle m-auto">
-          <p class="text-8xl">{{arr[currentIndex].description}}</p>
-      </div>
-      <div class="p-4 items-center align-middle m-auto">
+      <div class="p-4 items-center align-middle">
         <div 
-          class="grid grid-cols-1 items-center align-middle"
-          v-for="(index) in currentIndexRange"
-          @click="handleKeyLeft"
-          v-bind:key="index"
+          class="grid grid-cols-4 items-center align-middle"
         >
           <div class=
             "max-w-sm m-7 rounded overflow-hidden shadow-lg" 
+            v-for="(item, index) in arr"
+            v-bind:key="index"
             :class="{'opacity-50': index !== currentIndex}"
           >
             <img 
@@ -74,17 +69,17 @@
                 alt="cover"
               />
             <div class="m-7">
-              <div class="font-bold text-xl mb-2">{{arr[index].name}}</div>
+              <div class="font-bold text-xl mb-2">{{item.name}}</div>
               <p class="text-gray-700 text-base">
-                {{arr[index].description}}
+                {{item.description}}
               </p>
             </div>
             <div class="px-6 pt-4 pb-2">
               <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                <a :href="arr[index].twitter">Twitter</a>
+                <a :href="item.twitter">Twitter</a>
               </span>
               <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                <a :href="arr[index].pixiv">Pixiv</a>
+                <a :href="item.pixiv">Pixiv</a>
               </span>
             </div>
           </div>
@@ -92,7 +87,7 @@
       </div>
     </div>
     <div
-      class="absolute inset-x-0 bottom-0 pb-3 pr-5 transition"
+      class="relative inset-x-0 bottom-0 pb-3 pr-5 transition"
     >
       <a
         class="text-gray-400 hover:text-blue-400 transition"
