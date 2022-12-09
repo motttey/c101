@@ -22,15 +22,15 @@
         <div class="items-center text-center space-x-4">
           <img 
             class="object-cover min-h-screen"
-            src="https://motttey.github.io/perfectblue.jpg" 
+            src="~/assets/FS_hyousi_middle.jpg" 
             alt="cover"
           />
         </div>
         <div class="p-6 items-center align-middle">
-          <h2 class="text-4xl">藤子不二雄<br>オマージュマガジン</h2>
+          <h2 class="text-2xl">藤子不二雄オマージュマガジン</h2>
+          <span class="text-3xl">フジコ・スピリット</span>
           <h1>
-            <span class="text-[128px]">FS</span>
-            <span class="text-3xl">フジコ・スピリット</span>
+            <span class="text-[128px]">F.S</span>
             </h1>
           <p class="text-justify ...">
             説明
@@ -49,16 +49,16 @@
       </div>
     </div>
   </div>
-  <div class="scroll-smooth">
+  <div class="min-h-screen scroll-smooth">
     <div 
       id="authors"
     >
-      <div class="p-4 items-center align-middle">
+      <div class="mt-12 items-center align-middle">
         <div 
           class="grid grid-cols-4 items-center align-middle"
         >
           <div class=
-            "max-w-sm m-7 rounded overflow-hidden shadow-lg" 
+            "max-w-sm m-6 rounded overflow-hidden shadow-lg" 
             v-for="(item, index) in arr"
             v-bind:key="index"
             :class="{'opacity-50': index !== currentIndex}"
