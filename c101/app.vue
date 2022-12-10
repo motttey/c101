@@ -13,15 +13,15 @@
           </button>
       </div>
   </div>
-  <div class="min-h-screen h-screen scroll-smooth">
+  <div class="min-h-screen scroll-smooth">
     <div 
       class="flex flex-row justify-center items-center"
       id="abstract"
     >
       <div class="h-screen grid grid-cols-2">
-        <div class="items-center text-center space-x-4">
+        <div class="items-center text-center">
           <img 
-            class="object-cover min-h-screen"
+            class="h-screen"
             src="~/assets/FS_hyousi_middle.jpg" 
             alt="cover"
           />
@@ -49,11 +49,11 @@
       </div>
     </div>
   </div>
-  <div class="min-h-screen scroll-smooth">
+  <div class="scroll-smooth">
     <div 
       id="authors"
     >
-      <div class="mt-12 items-center align-middle">
+      <div class="items-center align-middle">
         <div 
           class="grid grid-cols-4 items-center align-middle"
         >
@@ -61,7 +61,6 @@
             "max-w-sm m-6 rounded overflow-hidden shadow-lg" 
             v-for="(item, index) in arr"
             v-bind:key="index"
-            :class="{'opacity-50': index !== currentIndex}"
           >
             <img 
                 class="w-full"
@@ -75,10 +74,16 @@
               </p>
             </div>
             <div class="px-6 pt-4 pb-2">
-              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              <span 
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                v-if="item.twitter"
+              >
                 <a :href="item.twitter">Twitter</a>
               </span>
-              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              <span 
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                v-if="item.pixiv"
+              >
                 <a :href="item.pixiv">Pixiv</a>
               </span>
             </div>
@@ -129,66 +134,80 @@ export default defineComponent({
     const arr = [
        {
         "id": 1,
-        "name": "望月田吾作1",
+        "name": "あんじゅ",
         "description": "説明1",
-        "twitter": "https://twitter.com/mt_tg",
-        "pixiv": "https://www.pixiv.net/users/415546"
+        "twitter": "https://twitter.com/apple_pie_0321",
+        "pixiv": ""
        },
        {
         "id": 2,
-        "name": "望月田吾作2",
+        "name": "イセ",
         "description": "説明2",
-        "twitter": "https://twitter.com/mt_tg",
-        "pixiv": "https://www.pixiv.net/users/415546"
+        "twitter": "https://twitter.com/tasu_hiku_",
+        "pixiv": ""
        },
        {
         "id": 3,
-        "name": "望月田吾作3",
+        "name": "タクえもん",
         "description": "説明3",
-        "twitter": "https://twitter.com/mt_tg",
-        "pixiv": "https://www.pixiv.net/users/415546"
+        "twitter": "https://twitter.com/DoraTakubou",
+        "pixiv": ""
        },
        {
         "id": 4,
-        "name": "望月田吾作4",
+        "name": "ツイートおじさん",
         "description": "説明4",
-        "twitter": "https://twitter.com/mt_tg",
-        "pixiv": "https://www.pixiv.net/users/415546"
+        "twitter": "https://twitter.com/co9EZOLIX4dRRG0",
+        "pixiv": ""
        },       
        {
         "id": 5,
-        "name": "望月田吾作5",
+        "name": "とりか",
         "description": "説明5",
-        "twitter": "https://twitter.com/mt_tg",
-        "pixiv": "https://www.pixiv.net/users/415546"
+        "twitter": "https://twitter.com/t0rika",
+        "pixiv": ""
        },
        {
         "id": 6,
-        "name": "望月田吾作6",
+        "name": "名無しのゴンスケ",
         "description": "説明6",
-        "twitter": "https://twitter.com/mt_tg",
-        "pixiv": "https://www.pixiv.net/users/415546"
+        "twitter": "https://twitter.com/nanashigonsuke",
+        "pixiv": ""
        },
        {
         "id": 7,
-        "name": "望月田吾作7",
+        "name": "マサえもん",
         "description": "説明7",
-        "twitter": "https://twitter.com/mt_tg",
-        "pixiv": "https://www.pixiv.net/users/415546"
+        "twitter": "https://twitter.com/masa7819",
+        "pixiv": ""
        },
        {
         "id": 8,
-        "name": "望月田吾作8",
+        "name": "枕さん",
         "description": "説明8",
+        "twitter": "https://twitter.com/makura8711",
+        "pixiv": ""
+       },
+       {
+        "id": 9,
+        "name": "望月田吾作",
+        "description": "説明9",
         "twitter": "https://twitter.com/mt_tg",
         "pixiv": "https://www.pixiv.net/users/415546"
        },
        {
-        "id": 9,
-        "name": "望月田吾作9",
+        "id": 10,
+        "name": "矢島ともあき",
         "description": "説明9",
-        "twitter": "https://twitter.com/mt_tg",
-        "pixiv": "https://www.pixiv.net/users/415546"
+        "twitter": "https://twitter.com/yjmtomoaki",
+        "pixiv": ""
+       },
+       {
+        "id": 11,
+        "name": "楽来一知",
+        "description": "説明9",
+        "twitter": "https://twitter.com/rakurai_66UFO",
+        "pixiv": ""
        }
     ]
     
