@@ -70,7 +70,7 @@
       </div>
     </div>
     <div 
-        class="flex justify-center pb-3 pr-5 transition"
+        class="flex justify-center my-4 pb-3 pr-5 transition"
       >
         <a
           class="text-gray-800 p-2 hover:text-blue-400 bg-gray-200/50 rounded transition"
@@ -101,10 +101,10 @@
             v-bind:key="index"
           >
             <img 
-                class="w-full"
-                src="https://motttey.github.io/perfectblue.jpg" 
-                alt="cover"
-              />
+              class="w-full h-48 object-cover"
+              :src="item.src" 
+              :alt="item.name"
+            />
             <div class="m-7">
               <div class="font-bold text-xl mb-2">{{item.name}}</div>
               <p class="text-gray-700 text-base">
@@ -130,14 +130,14 @@
       </div>
     </div>
     <div
-      class="flex justify-center pb-3 pr-5 transition"
+      class="flex justify-center my-4 pb-3 pr-5 transition"
     >
       <a
         class="text-gray-800 p-2 hover:text-blue-400 bg-gray-200/50 rounded transition"
         href="#access"
       >
           <button class="rounded-full">
-              Next-Section
+            Next-Section
           </button>
         </a>
     </div>
@@ -148,7 +148,7 @@
   >
     <div class="items-center align-middle">
       <div class="relative top-48 left-5 right-5">
-        <p class="text-4xl text-white">2022/12/30 (金) 東京ビッグサイト</p>
+        <p class="text-3xl text-white">2022/12/30 (金) 東京ビッグサイト</p>
         <p class="text-3xl text-white">スペース: 東ハ-50a 「カンヅメカン」</p>
       </div>
       <iframe 
@@ -175,6 +175,7 @@ export default defineComponent({
         "name": "あんじゅ",
         "description": "説明1",
         "twitter": "https://twitter.com/apple_pie_0321",
+        "src": "/assets/authors/01.jpg",
         "pixiv": ""
        },
        {
@@ -182,6 +183,7 @@ export default defineComponent({
         "name": "イセ",
         "description": "説明2",
         "twitter": "https://twitter.com/tasu_hiku_",
+        "src": "/assets/authors/02.jpg",
         "pixiv": ""
        },
        {
@@ -189,6 +191,7 @@ export default defineComponent({
         "name": "タクえもん",
         "description": "説明3",
         "twitter": "https://twitter.com/DoraTakubou",
+        "src": "/assets/authors/03.jpg",
         "pixiv": ""
        },
        {
@@ -196,6 +199,7 @@ export default defineComponent({
         "name": "ツイートおじさん",
         "description": "説明4",
         "twitter": "https://twitter.com/co9EZOLIX4dRRG0",
+        "src": "/assets/authors/04.jpg",
         "pixiv": ""
        },       
        {
@@ -203,6 +207,7 @@ export default defineComponent({
         "name": "とりか",
         "description": "説明5",
         "twitter": "https://twitter.com/t0rika",
+        "src": "/assets/authors/05.jpg",
         "pixiv": ""
        },
        {
@@ -210,6 +215,7 @@ export default defineComponent({
         "name": "名無しのゴンスケ",
         "description": "説明6",
         "twitter": "https://twitter.com/nanashigonsuke",
+        "src": "/assets/authors/06.jpg",
         "pixiv": ""
        },
        {
@@ -217,6 +223,7 @@ export default defineComponent({
         "name": "マサえもん",
         "description": "説明7",
         "twitter": "https://twitter.com/masa7819",
+        "src": "/assets/authors/07.jpg",
         "pixiv": ""
        },
        {
@@ -224,6 +231,7 @@ export default defineComponent({
         "name": "枕さん",
         "description": "説明8",
         "twitter": "https://twitter.com/makura8711",
+        "src": "/assets/authors/08.jpg",
         "pixiv": ""
        },
        {
@@ -231,20 +239,23 @@ export default defineComponent({
         "name": "望月田吾作",
         "description": "説明9",
         "twitter": "https://twitter.com/mt_tg",
+        "src": "/assets/authors/09.jpg",
         "pixiv": "https://www.pixiv.net/users/415546"
        },
        {
         "id": 10,
         "name": "矢島ともあき",
-        "description": "説明9",
+        "description": "説明10",
         "twitter": "https://twitter.com/yjmtomoaki",
+        "src": "/assets/authors/10.jpg",
         "pixiv": ""
        },
        {
         "id": 11,
         "name": "楽来一知",
-        "description": "説明9",
+        "description": "説明11",
         "twitter": "https://twitter.com/rakurai_66UFO",
+        "src": "/assets/authors/11.jpg",
         "pixiv": ""
        }
     ]
