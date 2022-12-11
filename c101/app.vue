@@ -4,7 +4,7 @@
       class="fixed w-full flex justify-end bottom-0 pb-3 pr-5 transition"
   >
       <div
-          class="text-gray-400 hover:text-blue-400 transition"
+          class="text-gray-800 p-2 hover:text-blue-400 bg-white/50 rounded transition"
       >
           <button 
             v-on:click="scrollToTop"
@@ -26,7 +26,7 @@
             alt="cover"
           />
         </div>
-        <div class="p-6 items-center align-middle">
+        <div class="p-6 mx-8 items-center align-middle">
           <h2 class="text-2xl">藤子不二雄オマージュマガジン</h2>
           <span class="text-3xl">フジコ・スピリット</span>
           <h1>
@@ -35,11 +35,25 @@
           <p class="text-justify ...">
             藤子不二雄さんは、日本の漫画家です。彼は、「鉄腕アトム」「魔法騎士レイアース」「キャプテン翼」などの人気作品を生み出し、多くのファンを持っています。「フジコ・スピリット」という合同誌があるということですが、詳細は分かりません。私は、大型言語モデルであり、具体的な内容をお伺いすることはできません。お手数ですが、もう少し情報をご提供いただけると、より詳しい回答をさせていただけるかもしれません。
           </p>
+          <p class="my-4 text-2xl">
+            詳細情報
+          </p>
+          <ul class="space-y-1 max-w-md list-disc list-inside">
+            <li>
+              頒布場所: コミックマーケット101 (C101)
+            </li>
+            <li>
+              頒布価格: 500円
+            </li>
+            <li>
+              内容: A5 48ページ
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="absolute inset-x-0 bottom-0 pb-3 pr-5 transition">
+      <div class="absolute inset-x-50 bottom-0 pb-3 pr-5 transition">
         <a
-          class="text-gray-400 hover:text-blue-400 transition"
+          class="text-gray-800 p-2 hover:text-blue-400 bg-white/50 rounded transition"
           href="#authors"
         >
           <button>
@@ -53,14 +67,14 @@
     <div 
       id="authors"
     >
-      <div class="items-center align-middle">
+      <div class="my-4 text-center lign-middle">
         <h1>
-           <span class="text-3xl">参加者一覧</span>
+           <span class="text-3xl items-center">参加者一覧</span>
         </h1>
       </div>
-      <div class="items-center align-middle">
+      <div class="flex justify-center items-center align-middle">
         <div 
-          class="grid grid-cols-4 items-center align-middle"
+          class="mx-8 grid grid-cols-1 sm:griid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center align-middle"
         >
           <div class=
             "max-w-sm m-6 rounded overflow-hidden shadow-lg" 
@@ -97,10 +111,10 @@
       </div>
     </div>
     <div
-      class="relative inset-x-0 bottom-0 pb-3 pr-5 transition"
+      class="flex justify-center pb-3 pr-5 transition"
     >
       <a
-        class="text-gray-400 hover:text-blue-400 transition"
+        class="text-gray-800 p-2 hover:text-blue-400 bg-gray-200/50 rounded transition"
         href="#access"
       >
           <button class="rounded-full">
@@ -115,8 +129,8 @@
   >
     <div class="items-center align-middle">
       <div class="relative top-48 left-5 right-5">
-        <p class="text-6xl text-white">2022/12/30 (金) 東京ビッグサイト</p>
-        <p class="text-4xl text-white">東ハ50a</p>
+        <p class="text-4xl text-white">2022/12/30 (金) 東京ビッグサイト</p>
+        <p class="text-3xl text-white">スペース: 東ハ50a</p>
       </div>
       <iframe 
         class="w-screen h-screen pointer-events-none"
@@ -125,7 +139,7 @@
         frameborder="0"
       >
       </iframe>
-      <div class="self-end space-y-4">
+      <div class="self-end space-y-4 bg-gray-500">
         <p class="text-1xl inline-block align-bottom">© 2022 Tagosaku Mochiduki</p>
       </div>
     </div>
