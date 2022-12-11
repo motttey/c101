@@ -26,13 +26,17 @@
             alt="cover"
           />
         </div>
-        <div class="p-6 mx-8 items-center align-middle">
+        <div class="p-6 mx-8 my-6 items-center align-middle bg-[url('~/assets/fs.svg')] bg-no-repeat">
           <h2 class="text-2xl">藤子不二雄オマージュマガジン</h2>
           <span class="text-3xl">フジコ・スピリット</span>
-          <h1>
-            <span class="text-[128px]">F.S</span>
-          </h1>
-          <p class="text-justify ...">
+          <!--
+          <div class="bg-local">
+            <h1>
+              <span class="text-[128px]">F.S</span>
+            </h1>
+          </div>
+          --->
+          <p class="text-justify">
             藤子不二雄さんは、日本の漫画家です。彼は、「鉄腕アトム」「魔法騎士レイアース」「キャプテン翼」などの人気作品を生み出し、多くのファンを持っています。「フジコ・スピリット」という合同誌があるということですが、詳細は分かりません。私は、大型言語モデルであり、具体的な内容をお伺いすることはできません。お手数ですが、もう少し情報をご提供いただけると、より詳しい回答をさせていただけるかもしれません。
           </p>
           <p class="my-4 text-2xl">
@@ -53,7 +57,7 @@
       </div>
       <div class="absolute inset-x-50 bottom-0 pb-3 pr-5 transition">
         <a
-          class="text-gray-800 p-2 hover:text-blue-400 bg-white/50 rounded transition"
+          class="text-gray-800 p-2 hover:text-blue-400 bg-gray-200/50 rounded transition"
           href="#authors"
         >
           <button>
@@ -130,7 +134,7 @@
     <div class="items-center align-middle">
       <div class="relative top-48 left-5 right-5">
         <p class="text-4xl text-white">2022/12/30 (金) 東京ビッグサイト</p>
-        <p class="text-3xl text-white">スペース: 東ハ50a</p>
+        <p class="text-3xl text-white">スペース: 東ハ-50a 「カンヅメカン」</p>
       </div>
       <iframe 
         class="w-screen h-screen pointer-events-none"
@@ -139,8 +143,8 @@
         frameborder="0"
       >
       </iframe>
-      <div class="self-end space-y-4 bg-gray-500">
-        <p class="text-1xl inline-block align-bottom">© 2022 Tagosaku Mochiduki</p>
+      <div class="self-end space-y-4 bg-gray-800">
+        <p class="text-1xl inline-block align-bottom text-white">© 2022 Tagosaku Mochiduki</p>
       </div>
     </div>
   </div>
