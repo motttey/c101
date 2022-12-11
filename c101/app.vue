@@ -21,7 +21,7 @@
       <div class="h-screen grid grid-cols-2">
         <div class="items-center text-center">
           <img 
-            class="h-screen"
+            class="h-screen object-cover"
             src="~/assets/FS_hyousi_middle.jpg" 
             alt="cover"
           />
@@ -31,9 +31,9 @@
           <span class="text-3xl">フジコ・スピリット</span>
           <h1>
             <span class="text-[128px]">F.S</span>
-            </h1>
+          </h1>
           <p class="text-justify ...">
-            説明
+            藤子不二雄さんは、日本の漫画家です。彼は、「鉄腕アトム」「魔法騎士レイアース」「キャプテン翼」などの人気作品を生み出し、多くのファンを持っています。「フジコ・スピリット」という合同誌があるということですが、詳細は分かりません。私は、大型言語モデルであり、具体的な内容をお伺いすることはできません。お手数ですが、もう少し情報をご提供いただけると、より詳しい回答をさせていただけるかもしれません。
           </p>
         </div>
       </div>
@@ -53,6 +53,11 @@
     <div 
       id="authors"
     >
+      <div class="items-center align-middle">
+        <h1>
+           <span class="text-3xl">参加者一覧</span>
+        </h1>
+      </div>
       <div class="items-center align-middle">
         <div 
           class="grid grid-cols-4 items-center align-middle"
