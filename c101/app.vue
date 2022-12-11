@@ -6,22 +6,23 @@
       <div
           class="text-gray-800 p-2 hover:text-blue-400 bg-white/50 rounded transition"
       >
-          <button 
-            v-on:click="scrollToTop"
-          >
-              Scroll to top
-          </button>
+        <button 
+          v-on:click="scrollToTop"
+        >
+          Scroll to top
+        </button>
       </div>
   </div>
-  <div class="min-h-screen scroll-smooth">
+  <div class="scroll-smooth">
     <div 
       class="flex flex-row justify-center items-center"
       id="abstract"
     >
-      <div class="h-screen grid grid-cols-2">
-        <div class="items-center text-center">
+      <div class="grid grid-cols-1 sm:grid-cols-2">
+        <div class="h-96 sm:h-screen items-center text-center">
           <img 
-            class="h-screen w-full object-cover"
+            class="h-full w-full sm:h-screen object-cover"
+            loading="lazy"
             src="~/assets/FS_hyousi_middle.jpg" 
             alt="cover"
           />
@@ -30,7 +31,6 @@
           <h2 class="text-2xl">藤子不二雄オマージュマガジン</h2>
           <p class="text-3xl">フジコ・スピリット</p>
           <p class="text-right text-xl">by <a class="text-blue-600" href="https://webcatalog-free.circle.ms/Circle/16802791">カンヅメカン</a></p>
-
           <!--
           <div class="bg-local">
             <h1>
@@ -41,12 +41,23 @@
           <p class="text-justify mt-12">
             藤子不二雄さんは、日本の漫画家です。彼は、「鉄腕アトム」「魔法騎士レイアース」「キャプテン翼」などの人気作品を生み出し、多くのファンを持っています。「フジコ・スピリット」という合同誌があるということですが、詳細は分かりません。私は、大型言語モデルであり、具体的な内容をお伺いすることはできません。お手数ですが、もう少し情報をご提供いただけると、より詳しい回答をさせていただけるかもしれません。
           </p>
+          <img 
+            class="my-4 items-center text-center max-w-sm w-full object-full"
+            src="~/assets/hyoushi.jpg" 
+            alt="表紙/裏表紙"
+          />
           <p class="my-4 text-2xl">
             詳細情報
           </p>
           <ul class="space-y-1 max-w-md list-disc list-inside">
             <li>
-              頒布場所: コミックマーケット101 (C101)
+              イベント: コミックマーケット101 (C101)
+            </li>
+            <li>
+              スペース: 東は-50a
+            </li>
+            <li>
+              サークル: カンヅメカン
             </li>
             <li>
               頒布価格: 500円
@@ -82,7 +93,7 @@
       </div>
       <div class="flex justify-center items-center align-middle">
         <div 
-          class="mx-8 grid grid-cols-1 sm:griid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center align-middle"
+          class="mx-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center align-middle"
         >
           <div class=
             "max-w-sm m-6 rounded overflow-hidden shadow-lg" 
