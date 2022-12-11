@@ -21,14 +21,16 @@
       <div class="h-screen grid grid-cols-2">
         <div class="items-center text-center">
           <img 
-            class="h-screen object-cover"
+            class="h-screen w-full object-cover"
             src="~/assets/FS_hyousi_middle.jpg" 
             alt="cover"
           />
         </div>
         <div class="p-6 mx-8 my-6 items-center align-middle bg-[url('~/assets/fs.svg')] bg-no-repeat">
           <h2 class="text-2xl">藤子不二雄オマージュマガジン</h2>
-          <span class="text-3xl">フジコ・スピリット</span>
+          <p class="text-3xl">フジコ・スピリット</p>
+          <p class="text-right text-xl">by <a class="text-blue-600" href="https://webcatalog-free.circle.ms/Circle/16802791">カンヅメカン</a></p>
+
           <!--
           <div class="bg-local">
             <h1>
@@ -36,7 +38,7 @@
             </h1>
           </div>
           --->
-          <p class="text-justify">
+          <p class="text-justify mt-12">
             藤子不二雄さんは、日本の漫画家です。彼は、「鉄腕アトム」「魔法騎士レイアース」「キャプテン翼」などの人気作品を生み出し、多くのファンを持っています。「フジコ・スピリット」という合同誌があるということですが、詳細は分かりません。私は、大型言語モデルであり、具体的な内容をお伺いすることはできません。お手数ですが、もう少し情報をご提供いただけると、より詳しい回答をさせていただけるかもしれません。
           </p>
           <p class="my-4 text-2xl">
@@ -55,7 +57,10 @@
           </ul>
         </div>
       </div>
-      <div class="absolute inset-x-50 bottom-0 pb-3 pr-5 transition">
+    </div>
+    <div 
+        class="flex justify-center pb-3 pr-5 transition"
+      >
         <a
           class="text-gray-800 p-2 hover:text-blue-400 bg-gray-200/50 rounded transition"
           href="#authors"
@@ -65,7 +70,6 @@
           </button>
         </a>
       </div>
-    </div>
   </div>
   <div class="scroll-smooth">
     <div 
