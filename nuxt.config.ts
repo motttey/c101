@@ -2,9 +2,6 @@
 export default defineNuxtConfig({
     ssr: false,
     target: "static",
-    router: {
-        base: '/c101-landing/',
-    },
     modules: [
         '@nuxtjs/tailwindcss'
     ]
