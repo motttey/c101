@@ -102,7 +102,7 @@
           >
             <img 
               class="w-full h-48 object-cover"
-              :src="item.src" 
+              :src="getImageUrl(item.src)" 
               :alt="item.name"
             />
             <div class="m-7">
@@ -175,7 +175,7 @@ export default defineComponent({
         "name": "あんじゅ",
         "description": "説明1",
         "twitter": "https://twitter.com/apple_pie_0321",
-        "src": "/assets/authors/01.jpg",
+        "src": "01",
         "pixiv": ""
        },
        {
@@ -183,7 +183,7 @@ export default defineComponent({
         "name": "イセ",
         "description": "説明2",
         "twitter": "https://twitter.com/tasu_hiku_",
-        "src": "/assets/authors/02.jpg",
+        "src": "02",
         "pixiv": ""
        },
        {
@@ -191,7 +191,7 @@ export default defineComponent({
         "name": "タクえもん",
         "description": "説明3",
         "twitter": "https://twitter.com/DoraTakubou",
-        "src": "/assets/authors/03.jpg",
+        "src": "03",
         "pixiv": ""
        },
        {
@@ -199,7 +199,7 @@ export default defineComponent({
         "name": "ツイートおじさん",
         "description": "説明4",
         "twitter": "https://twitter.com/co9EZOLIX4dRRG0",
-        "src": "/assets/authors/04.jpg",
+        "src": "04",
         "pixiv": ""
        },       
        {
@@ -207,7 +207,7 @@ export default defineComponent({
         "name": "とりか",
         "description": "説明5",
         "twitter": "https://twitter.com/t0rika",
-        "src": "/assets/authors/05.jpg",
+        "src": "05",
         "pixiv": ""
        },
        {
@@ -215,7 +215,7 @@ export default defineComponent({
         "name": "名無しのゴンスケ",
         "description": "説明6",
         "twitter": "https://twitter.com/nanashigonsuke",
-        "src": "/assets/authors/06.jpg",
+        "src": "06",
         "pixiv": ""
        },
        {
@@ -223,7 +223,7 @@ export default defineComponent({
         "name": "マサえもん",
         "description": "説明7",
         "twitter": "https://twitter.com/masa7819",
-        "src": "/assets/authors/07.jpg",
+        "src": "07",
         "pixiv": ""
        },
        {
@@ -231,7 +231,7 @@ export default defineComponent({
         "name": "枕さん",
         "description": "説明8",
         "twitter": "https://twitter.com/makura8711",
-        "src": "/assets/authors/08.jpg",
+        "src": "08",
         "pixiv": ""
        },
        {
@@ -239,7 +239,7 @@ export default defineComponent({
         "name": "望月田吾作",
         "description": "説明9",
         "twitter": "https://twitter.com/mt_tg",
-        "src": "/assets/authors/09.jpg",
+        "src": "09",
         "pixiv": "https://www.pixiv.net/users/415546"
        },
        {
@@ -247,7 +247,7 @@ export default defineComponent({
         "name": "矢島ともあき",
         "description": "説明10",
         "twitter": "https://twitter.com/yjmtomoaki",
-        "src": "/assets/authors/10.jpg",
+        "src": "10",
         "pixiv": ""
        },
        {
@@ -255,7 +255,7 @@ export default defineComponent({
         "name": "楽来一知",
         "description": "説明11",
         "twitter": "https://twitter.com/rakurai_66UFO",
-        "src": "/assets/authors/11.jpg",
+        "src": "11",
         "pixiv": ""
        }
     ]
@@ -290,12 +290,20 @@ export default defineComponent({
         behavior: 'smooth'
       })
     }
+
+    // https://stackoverflow.com/questions/66419471/vue-3-vite-dynamic-img-src
+    const getImageUrl = (src) => {
+      const imageUrl = new URL(`./assets/authors/${src}.jpg`, import.meta.url).href
+      return imageUrl
+    }
+
     return {
       arr,
       currentIndex,
       currentIndexRange,
       scrollToTop,
       handleKeyLeft,
+      getImageUrl
     }
   },
 })
