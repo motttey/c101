@@ -28,8 +28,8 @@
           />
         </div>
         <div class="p-6 mx-8 my-6 items-center align-middle bg-[url('~/assets/fs.svg')] bg-no-repeat">
-          <h2 class="text-2xl">藤子不二雄オマージュマガジン</h2>
-          <p class="text-3xl">フジコ・スピリット</p>
+          <h2 class="text-2xl font-bold">藤子不二雄オマージュマガジン</h2>
+          <p class="text-3xl font-bold">フジコ・スピリット</p>
           <p class="text-right text-xl">by <a class="text-blue-600" href="https://webcatalog-free.circle.ms/Circle/16802791">カンヅメカン</a></p>
           <!--
           <div class="bg-local">
@@ -46,7 +46,7 @@
             src="~/assets/hyoushi.jpg" 
             alt="表紙/裏表紙"
           />
-          <p class="my-4 text-2xl">
+          <p class="my-4 text-2xl font-medium">
             詳細情報
           </p>
           <ul class="space-y-1 max-w-md list-disc list-inside">
@@ -88,15 +88,15 @@
     >
       <div class="my-4 text-center lign-middle">
         <h1>
-           <span class="text-3xl items-center">参加者一覧</span>
+           <span class="text-3xl items-center font-medium">参加者一覧</span>
         </h1>
       </div>
       <div class="flex justify-center items-center align-middle">
         <div 
-          class="mx-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center align-middle"
+          class="mx-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center align-middle"
         >
           <div class=
-            "max-w-sm m-6 rounded overflow-hidden shadow-lg" 
+            "max-w-sm my-6 mx-4 rounded overflow-hidden shadow-lg" 
             v-for="(item, index) in arr"
             v-bind:key="index"
           >
@@ -148,8 +148,8 @@
   >
     <div class="items-center align-middle">
       <div class="relative top-48 left-5 right-5">
-        <p class="text-3xl text-white">2022/12/30 (金) 東京ビッグサイト</p>
-        <p class="text-3xl text-white">スペース: 東ハ-50a 「カンヅメカン」</p>
+        <p class="text-2xl md:text-3xl text-white font-medium">2022/12/30 (金) 東京ビッグサイト</p>
+        <p class="text-2xl md:text-3xl text-white font-medium">スペース: 東ハ-50a 「カンヅメカン」</p>
       </div>
       <iframe 
         class="w-screen h-screen pointer-events-none"
