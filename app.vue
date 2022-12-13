@@ -308,3 +308,9 @@ export default defineComponent({
   },
 })
 </script>
+
+<style>
+html {
+  font-family: 'M PLUS 2', sans-serif;
+}
+</style>
