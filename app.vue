@@ -176,7 +176,7 @@ export default defineComponent({
         "description": "説明1",
         "twitter": "https://twitter.com/apple_pie_0321",
         "src": "01",
-        "pixiv": ""
+        "pixiv": "https://www.pixiv.net/users/4036156"
        },
        {
         "id": 2,
@@ -184,7 +184,7 @@ export default defineComponent({
         "description": "説明2",
         "twitter": "https://twitter.com/tasu_hiku_",
         "src": "02",
-        "pixiv": ""
+        "pixiv": "https://www.pixiv.net/users/3014124"
        },
        {
         "id": 3,
@@ -192,7 +192,7 @@ export default defineComponent({
         "description": "説明3",
         "twitter": "https://twitter.com/DoraTakubou",
         "src": "03",
-        "pixiv": ""
+        "pixiv": "https://www.pixiv.net/users/11660552"
        },
        {
         "id": 4,
@@ -200,7 +200,7 @@ export default defineComponent({
         "description": "説明4",
         "twitter": "https://twitter.com/co9EZOLIX4dRRG0",
         "src": "04",
-        "pixiv": ""
+        "pixiv": "https://www.pixiv.net/users/12512382"
        },       
        {
         "id": 5,
@@ -208,7 +208,7 @@ export default defineComponent({
         "description": "説明5",
         "twitter": "https://twitter.com/t0rika",
         "src": "05",
-        "pixiv": ""
+        "pixiv": "https://www.pixiv.net/users/2638861"
        },
        {
         "id": 6,
@@ -216,7 +216,7 @@ export default defineComponent({
         "description": "説明6",
         "twitter": "https://twitter.com/nanashigonsuke",
         "src": "06",
-        "pixiv": ""
+        "pixiv": "https://www.pixiv.net/users/45100114"
        },
        {
         "id": 7,
@@ -224,7 +224,7 @@ export default defineComponent({
         "description": "説明7",
         "twitter": "https://twitter.com/masa7819",
         "src": "07",
-        "pixiv": ""
+        "pixiv": "https://www.pixiv.net/users/3942792"
        },
        {
         "id": 8,
@@ -232,7 +232,7 @@ export default defineComponent({
         "description": "説明8",
         "twitter": "https://twitter.com/makura8711",
         "src": "08",
-        "pixiv": ""
+        "pixiv": "https://www.pixiv.net/users/3106182"
        },
        {
         "id": 9,
@@ -248,7 +248,7 @@ export default defineComponent({
         "description": "説明10",
         "twitter": "https://twitter.com/yjmtomoaki",
         "src": "10",
-        "pixiv": ""
+        "pixiv": "https://www.pixiv.net/users/6451424"
        },
        {
         "id": 11,
@@ -256,7 +256,7 @@ export default defineComponent({
         "description": "説明11",
         "twitter": "https://twitter.com/rakurai_66UFO",
         "src": "11",
-        "pixiv": ""
+        "pixiv": "https://www.pixiv.net/users/474750"
        }
     ]
     
