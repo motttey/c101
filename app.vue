@@ -154,6 +154,7 @@
       <iframe 
         class="w-screen h-screen pointer-events-none"
         id="mapInlineFrame"
+        loading="lazy"
         src="https://main--relaxed-lovelace-59e029.netlify.app/"
         frameborder="0"
       >
