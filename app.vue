@@ -152,10 +152,10 @@
         <p class="text-2xl md:text-3xl text-white font-medium">スペース: 東ハ-50a 「カンヅメカン」</p>
       </div>
       <iframe 
-        class="w-screen h-screen pointer-events-none"
+        class="w-screen h-screen pointer-events-none touch-none"
         id="mapInlineFrame"
-        loading="lazy"
         src="https://main--relaxed-lovelace-59e029.netlify.app/"
+        loading="lazy"
         frameborder="0"
       >
       </iframe>
