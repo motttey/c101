@@ -156,11 +156,12 @@
         <p class="text-2xl md:text-3xl text-white font-medium">スペース: 東ハ-50a 「カンヅメカン」</p>
       </div>
       <img 
-        class="w-screen h-screen object-cover lg:hidden"
+        class="w-screen h-screen object-cover"
         loading="lazy"
         src="~/assets/map.jpg" 
         alt="cover"
       />
+      <!--
       <iframe 
         class="w-screen h-screen pointer-events-none touch-none hidden lg:block"
         id="mapInlineFrame"
@@ -169,6 +170,7 @@
         frameborder="0"
       >
       </iframe>
+      -->
       <div class="self-end space-y-4 bg-gray-800">
         <p class="text-1xl inline-block align-bottom text-white">© 2022 Tagosaku Mochiduki</p>
       </div>
