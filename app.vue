@@ -28,9 +28,9 @@
           />
         </div>
         <div class="p-6 mx-8 my-6 items-center align-middle bg-[url('~/assets/fs.svg')] bg-no-repeat">
-          <h2 class="text-2xl font-bold">藤子不二雄オマージュマガジン</h2>
-          <p class="text-3xl font-bold">フジコ・スピリット</p>
-          <p class="text-right text-xl">by <a class="text-blue-600" href="https://webcatalog-free.circle.ms/Circle/16802791">カンヅメカン</a></p>
+          <h2 class="text-xl md:text-2xl font-bold">藤子不二雄オマージュマガジン</h2>
+          <h1 class="text-2xl md:text-3xl font-bold">フジコ・スピリット</h1>
+          <p class="text-right text-lg md:text-xl ">by <a class="text-blue-600" href="https://webcatalog-free.circle.ms/Circle/16802791">カンヅメカン</a></p>
           <!--
           <div class="bg-local">
             <h1>
@@ -46,15 +46,15 @@
             src="~/assets/hyoushi.jpg" 
             alt="表紙/裏表紙"
           />
-          <p class="my-4 text-2xl font-medium">
+          <h2 class="my-4 text-xl md:text-2xl font-medium">
             詳細情報
-          </p>
+          </h2>
           <ul class="space-y-1 max-w-md list-disc list-inside">
             <li>
               イベント: コミックマーケット101 (C101)
             </li>
             <li>
-              スペース: 東は-50a
+              スペース: 東ハ-50a
             </li>
             <li>
               サークル: カンヅメカン
@@ -90,7 +90,7 @@
     >
       <div class="my-4 text-center lign-middle">
         <h1>
-           <span class="text-3xl items-center font-medium">参加者一覧</span>
+           <span class="text-2xl md:text-3xl items-center font-medium">参加者一覧</span>
         </h1>
       </div>
       <div class="flex justify-center items-center align-middle">
@@ -107,11 +107,13 @@
               :src="getImageUrl(item.src)" 
               :alt="item.name"
             />
-            <div class="m-7">
+            <div class="mx-7 mt-5">
               <div class="font-bold text-xl mb-2">{{item.name}}</div>
+              <!--
               <p class="text-gray-700 text-base">
                 {{item.description}}
               </p>
+              -->
             </div>
             <div class="px-6 pt-4 pb-2">
               <span 
@@ -156,12 +158,11 @@
         <p class="text-2xl md:text-3xl text-white font-medium">スペース: 東ハ-50a 「カンヅメカン」</p>
       </div>
       <img 
-        class="w-screen h-screen object-cover"
+        class="w-screen h-screen object-cover lg:hidden"
         loading="lazy"
         src="~/assets/map.jpg" 
         alt="cover"
       />
-      <!--
       <iframe 
         class="w-screen h-screen pointer-events-none touch-none hidden lg:block"
         id="mapInlineFrame"
@@ -170,7 +171,6 @@
         frameborder="0"
       >
       </iframe>
-      -->
       <div class="self-end space-y-4 bg-gray-800">
         <p class="text-1xl inline-block align-bottom text-white">© 2022 Tagosaku Mochiduki</p>
       </div>
