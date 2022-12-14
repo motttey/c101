@@ -21,7 +21,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2">
         <div class="h-96 sm:h-screen items-center text-center">
           <img 
-            class="w-full h-96 sm:h-screen object-cover"
+            class="w-full h-96 sm:h-screen object-bottom object-cover"
             loading="lazy"
             src="~/assets/FS_hyousi_middle.jpg" 
             alt="cover"
@@ -175,11 +175,12 @@
         <p class="text-2xl md:text-3xl text-white font-medium">東5ホール ハ-50a 「カンヅメカン」</p>
       </div>
       <img 
-        class="w-screen h-screen object-cover lg:hidden"
+        class="w-screen h-screen object-cover"
         loading="lazy"
         src="~/assets/map.jpg" 
         alt="cover"
       />
+      <!--
       <iframe 
         class="w-screen h-screen pointer-events-none touch-none hidden lg:block"
         id="mapInlineFrame"
@@ -188,6 +189,7 @@
         frameborder="0"
       >
       </iframe>
+      -->
       <div class="self-end space-y-4 bg-gray-800">
         <p class="text-1xl inline-block align-bottom text-white">© 2022 Tagosaku Mochiduki</p>
       </div>
