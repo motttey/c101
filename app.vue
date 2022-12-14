@@ -151,8 +151,14 @@
         <p class="text-2xl md:text-3xl text-white font-medium">2022/12/30 (金) 東京ビッグサイト</p>
         <p class="text-2xl md:text-3xl text-white font-medium">スペース: 東ハ-50a 「カンヅメカン」</p>
       </div>
+      <img 
+        class="w-screen h-screen object-cover lg:hidden"
+        loading="lazy"
+        src="~/assets/map.jpg" 
+        alt="cover"
+      />
       <iframe 
-        class="w-screen h-screen pointer-events-none touch-none"
+        class="w-screen h-screen pointer-events-none touch-none hidden lg:block"
         id="mapInlineFrame"
         src="https://main--relaxed-lovelace-59e029.netlify.app/"
         loading="lazy"
