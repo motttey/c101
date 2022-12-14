@@ -21,7 +21,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2">
         <div class="h-96 sm:h-screen items-center text-center">
           <img 
-            class="h-full w-full sm:h-screen object-cover"
+            class="w-full h-96 sm:h-screen object-cover"
             loading="lazy"
             src="~/assets/FS_hyousi_middle.jpg" 
             alt="cover"
@@ -69,18 +69,20 @@
         </div>
       </div>
     </div>
+    <!--
     <div 
-        class="flex justify-center my-4 pb-3 pr-5 transition"
+      class="relative bottom-1 left-1 flex justify-center my-4 pb-3 pr-5 transition"
+    >
+      <a
+        class="text-gray-800 p-2 hover:text-blue-400 bg-gray-200/50 rounded transition"
+        href="#authors"
       >
-        <a
-          class="text-gray-800 p-2 hover:text-blue-400 bg-gray-200/50 rounded transition"
-          href="#authors"
-        >
-          <button>
-              Next-Section
-          </button>
-        </a>
-      </div>
+        <button>
+            参加者一覧
+        </button>
+      </a>
+    </div>
+    -->
   </div>
   <div class="scroll-smooth">
     <div 
@@ -129,18 +131,20 @@
         </div>
       </div>
     </div>
+    <!--
     <div
-      class="flex justify-center my-4 pb-3 pr-5 transition"
+      class="relative bottom-1 left-1 flex justify-center my-4 pb-3 pr-5 transition"
     >
       <a
         class="text-gray-800 p-2 hover:text-blue-400 bg-gray-200/50 rounded transition"
         href="#access"
       >
-          <button class="rounded-full">
-            Next-Section
-          </button>
-        </a>
-    </div>
+        <button class="rounded-full">
+          スペース詳細
+        </button>
+      </a>
+  </div>
+  -->
   </div>
   <div 
     class="flex flex-row min-h-screen justify-center items-center"
