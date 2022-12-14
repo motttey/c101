@@ -30,7 +30,9 @@
         <div class="p-6 mx-8 my-6 items-center align-middle bg-[url('~/assets/fs.svg')] bg-no-repeat">
           <h2 class="text-xl md:text-2xl font-bold">藤子不二雄オマージュマガジン</h2>
           <h1 class="text-2xl md:text-3xl font-bold">フジコ・スピリット</h1>
-          <p class="text-right text-lg md:text-xl ">by <a class="text-blue-600" href="https://webcatalog-free.circle.ms/Circle/16802791">カンヅメカン</a></p>
+          <p class="text-right text-lg md:text-xl font-semibold">by 
+            <a class="text-blue-600" href="https://webcatalog-free.circle.ms/Circle/16802791">カンヅメカン</a>
+          </p>
           <!--
           <div class="bg-local">
             <h1>
@@ -38,9 +40,24 @@
             </h1>
           </div>
           --->
-          <p class="text-justify mt-12">
-            藤子不二雄さんは、日本の漫画家です。彼は、「鉄腕アトム」「魔法騎士レイアース」「キャプテン翼」などの人気作品を生み出し、多くのファンを持っています。「フジコ・スピリット」という合同誌があるということですが、詳細は分かりません。私は、大型言語モデルであり、具体的な内容をお伺いすることはできません。お手数ですが、もう少し情報をご提供いただけると、より詳しい回答をさせていただけるかもしれません。
-          </p>
+          <blockquote class="text-md text-gray-900 dark:text-white my-6">
+            <svg 
+              aria-hidden="true"
+              class="w-10 h-10 text-gray-400"
+              viewBox="0 0 24 27"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+            </svg>
+            <p class="text-justify font-semibold">
+              日本を代表するトップクリエイターの多くは、インタビュー等を通して「自分の創作活動の原体験は藤子不二雄作品にある」と語っています。<br>
+              本書「フジコ・スピリット」では、SNSで活動される藤子作品を愛してやまない11名の創作家による漫画・イラスト・小説をオムニバス形式で掲載させていただきました。
+            </p>
+            <p class="text-right font-bold">
+              ― 矢島ともあき (<a class="text-blue-600" href="https://twitter.com/yjmtomoaki">@yjmtomoaki</a>)
+            </p>
+          </blockquote>
           <img 
             class="my-4 items-center text-center max-w-sm w-full object-full"
             src="~/assets/hyoushi.jpg" 
@@ -155,7 +172,7 @@
     <div class="items-center align-middle">
       <div class="relative top-48 left-5 right-5">
         <p class="text-2xl md:text-3xl text-white font-medium">2022/12/30 (金) 東京ビッグサイト</p>
-        <p class="text-2xl md:text-3xl text-white font-medium">スペース: 東ハ-50a 「カンヅメカン」</p>
+        <p class="text-2xl md:text-3xl text-white font-medium">東5ホール ハ-50a 「カンヅメカン」</p>
       </div>
       <img 
         class="w-screen h-screen object-cover lg:hidden"
