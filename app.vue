@@ -21,7 +21,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2">
         <div class="h-96 sm:h-screen items-center text-center">
           <img 
-            class="w-full h-96 sm:h-screen object-bottom object-cover"
+            class="w-full h-full sm:h-screen object-bottom object-cover"
             loading="lazy"
             src="~/assets/FS_hyousi_middle.jpg" 
             alt="cover"
@@ -40,17 +40,17 @@
             </h1>
           </div>
           --->
-          <blockquote class="text-md text-gray-900 dark:text-white my-6">
+          <blockquote class="text-md text-gray-900 dark:text-white my-10">
             <svg 
               aria-hidden="true"
-              class="w-10 h-10 text-gray-400"
+              class="w-8 h-8 text-gray-400"
               viewBox="0 0 24 27"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
             </svg>
-            <p class="text-justify font-semibold">
+            <p class="text-justify text-sm font-semibold">
               日本を代表するトップクリエイターの多くは、インタビュー等を通して「自分の創作活動の原体験は藤子不二雄作品にある」と語っています。<br>
               本書「フジコ・スピリット」では、SNSで活動される藤子作品を愛してやまない11名の創作家による漫画・イラスト・小説をオムニバス形式で掲載させていただきました。
             </p>
@@ -66,21 +66,21 @@
           <h2 class="my-4 text-xl md:text-2xl font-medium">
             詳細情報
           </h2>
-          <ul class="space-y-1 max-w-md list-disc list-inside">
+          <ul class="space-y-1 max-w-md text-sm list-disc list-inside">
             <li>
               イベント: コミックマーケット101 (C101)
             </li>
             <li>
-              スペース: 東ハ-50a
+              スペース: <span class="font-semibold">1日目 東ハ-50a</span>
             </li>
             <li>
-              サークル: カンヅメカン
+              サークル: <span class="font-semibold">カンヅメカン</span>
             </li>
             <li>
-              頒布価格: 500円
+              頒布価格: <span class="font-semibold">500円</span>
             </li>
             <li>
-              内容: A5 48ページ
+              内容: <span class="font-semibold">A5 48ページ</span>
             </li>
           </ul>
         </div>
@@ -116,7 +116,7 @@
         >
           <div class=
             "max-w-sm my-6 mx-4 rounded overflow-hidden shadow-lg" 
-            v-for="(item, index) in arr"
+            v-for="(item, index) in authorArr"
             v-bind:key="index"
           >
             <img 
@@ -201,7 +201,7 @@
 export default defineComponent({
   async setup() {
     const currentIndex = ref(0)
-    const arr = [
+    const authorArr = [
        {
         "id": 1,
         "name": "あんじゅ",
@@ -294,7 +294,7 @@ export default defineComponent({
     
     const handleKeyLeft = () => {
       console.log("left");
-      if (currentIndex.value < arr.length - 1) {
+      if (currentIndex.value < authorArr.length - 1) {
         currentIndex.value++
       } else {
         currentIndex.value = 0
@@ -307,11 +307,11 @@ export default defineComponent({
       const plus = currentIndex.value + 1;
 
       if (minus >= 0) retVal.push(minus);
-      else retVal.push(arr.length - 1)
+      else retVal.push(authorArr.length - 1)
 
       retVal.push(currentIndex.value)
 
-      if (plus < arr.length) retVal.push(plus);
+      if (plus < authorArr.length) retVal.push(plus);
       else retVal.push(0)
       return retVal;
     })
@@ -330,7 +330,7 @@ export default defineComponent({
     }
 
     return {
-      arr,
+      authorArr,
       currentIndex,
       currentIndexRange,
       scrollToTop,
