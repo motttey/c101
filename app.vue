@@ -55,7 +55,7 @@
               本書「フジコ・スピリット」では、SNSで活動される藤子作品を愛してやまない11名の創作家による漫画・イラスト・小説をオムニバス形式で掲載させていただきました。
             </p>
             <p class="text-right font-bold">
-              ― 矢島ともあき (<a class="text-blue-600" href="https://twitter.com/yjmtomoaki">@yjmtomoaki</a>)
+              ― 矢島ともあき (<a class="text-blue-600" href="https://twitter.com/yjmtomoaki" target="_blank">@yjmtomoaki</a>)
             </p>
           </blockquote>
           <img 
@@ -101,7 +101,7 @@
     </div>
     -->
   </div>
-  <div class="scroll-smooth">
+  <div class="scroll-smooth my-8">
     <div 
       id="authors"
     >
@@ -121,7 +121,7 @@
           >
             <img 
               class="w-full h-48 object-cover"
-              :src="getImageUrl(item.src)" 
+              :src="getImageUrl('/authors/' + item.src)" 
               :alt="item.name"
             />
             <div class="mx-7 mt-5">
@@ -164,6 +164,70 @@
       </a>
   </div>
   -->
+  </div>
+  <div class="scroll-smooth my-8">
+    <div 
+      id="distributions"
+    >
+      <div class="my-12 text-center lign-middle">
+        <h1>
+           <span class="text-3xl items-center font-medium">その他の頒布物</span>
+        </h1>
+        <div class="flex justify-center items-center align-middle">
+          <div 
+            class="mx-6 grid grid-cols-1 md:grid-cols-2 items-center align-middle"
+          >
+            <div class=
+              "max-w-md my-6 mx-10 h-128 rounded overflow-hidden shadow-lg" 
+              v-for="(item, index) in contentArr"
+              v-bind:key="index"
+            > 
+              <a :href="item.url" target=”_blank”>
+                <img 
+                  class="w-full h-84 object-cover"
+                  :src="getImageUrl(item.src)" 
+                  :alt="item.name"
+                />
+              </a>
+              <div class="mx-7 mt-5">
+                <div class="font-bold text-lg mb-2 text-left">
+                  {{item.name}}
+                </div>
+                <p class="text-gray-700 text-sm text-left">
+                  {{item.description}}
+                </p>
+                <p class="text-gray-700 text-sm text-left mt-2">
+                  {{item.subdescription}}
+                </p>
+                <p class="text-gray-700 text-sm text-left">
+                  <a class="text-blue-600" :href="item.url" target=”_blank”>[詳細情報]</a>
+                </p>
+              </div>
+              <div class="px-6 pt-4 pb-2 text-left">
+                <span 
+                  class="inline-block bg-red-600 rounded-full px-3 py-1 text-sm font-semibold text-gray-100 mr-2 mb-2"
+                  v-if="item.new"
+                >
+                  新刊
+                </span>
+                <span 
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                  v-if="item.size || item.pages"
+                >
+                  {{item.size}} {{item.pages}}
+                </span>
+                <span 
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-bold text-gray-700 mr-2 mb-2"
+                    v-if="item.price"
+                  >
+                    {{item.price}}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div 
     class="flex flex-row min-h-screen justify-center items-center"
@@ -292,6 +356,33 @@ export default defineComponent({
        }
     ]
     
+    const contentArr = [
+       {
+        "id": 1,
+        "name": "THE BOOK OF CIRCLES",
+        "description": "望月田吾作によるフルカラードラえもんイラスト総集編",
+        "subdescription": "2018年-2022年に描かれた「ドラえもん」を中心としたイラストを収録。再録作も適宜加筆修正しています",
+        "src": "book1",
+        "url": "https://www.pixiv.net/artworks/103332022",
+        "new": true,
+        "size": "B5",
+        "pages": "36ページ",
+        "price": "800円"
+       },
+       {
+        "id": 2,
+        "name": "Perfect Blue",
+        "description": "C93で頒布したフルカラードラえもんイラスト本",
+        "subdescription": "2017年までに描かれた「青背景ドラえもん」を中心としたイラストを収録",
+        "src": "book2",
+        "url": "https://www.pixiv.net/artworks/66256659",
+        "new": false,
+        "size": "B5",
+        "pages": "32ページ",
+        "price": "700円"
+       },
+    ]
+
     const handleKeyLeft = () => {
       console.log("left");
       if (currentIndex.value < authorArr.length - 1) {
@@ -325,12 +416,13 @@ export default defineComponent({
 
     // https://stackoverflow.com/questions/66419471/vue-3-vite-dynamic-img-src
     const getImageUrl = (src) => {
-      const imageUrl = new URL(`./assets/authors/${src}.jpg`, import.meta.url).href
+      const imageUrl = new URL(`./assets/${src}.jpg`, import.meta.url).href
       return imageUrl
     }
 
     return {
       authorArr,
+      contentArr,
       currentIndex,
       currentIndexRange,
       scrollToTop,
