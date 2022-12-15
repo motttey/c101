@@ -121,7 +121,7 @@
           >
             <img 
               class="w-full h-48 object-cover"
-              :src="getImageUrl('/authors/' + item.src)" 
+              :src="getAuthorImageUrl(item.src)" 
               :alt="item.name"
             />
             <div class="mx-7 mt-5">
@@ -415,8 +415,13 @@ export default defineComponent({
     }
 
     // https://stackoverflow.com/questions/66419471/vue-3-vite-dynamic-img-src
-    const getImageUrl = (src) => {
+    const getImageUrl = (src: string) => {
       const imageUrl = new URL(`./assets/${src}.jpg`, import.meta.url).href
+      return imageUrl
+    }
+
+    const getAuthorImageUrl = (src: string) => {
+      const imageUrl = new URL(`./assets/authors/${src}.jpg`, import.meta.url).href
       return imageUrl
     }
 
@@ -427,7 +432,8 @@ export default defineComponent({
       currentIndexRange,
       scrollToTop,
       handleKeyLeft,
-      getImageUrl
+      getImageUrl,
+      getAuthorImageUrl
     }
   },
 })
