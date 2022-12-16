@@ -27,7 +27,7 @@
             alt="cover"
           />
         </div>
-        <div class="p-6 mx-8 my-6 items-center align-middle bg-[url('~/assets/fs.svg')] bg-no-repeat">
+        <div class="p-6 mx-8 my-6 items-center align-middle bg-[url('~/assets/fs.svg')] bg-contain bg-no-repeat max-w-none">
           <h2 class="text-xl md:text-2xl font-bold">藤子不二雄オマージュマガジン</h2>
           <h1 class="text-2xl md:text-3xl font-bold">フジコ・スピリット</h1>
           <p class="text-right text-lg md:text-xl font-semibold">by 
@@ -50,7 +50,7 @@
             >
               <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
             </svg>
-            <p class="text-justify text-sm font-semibold">
+            <p class="text-justify text-sm font-semibold max-w-md">
               日本を代表するトップクリエイターの多くは、インタビュー等を通して「自分の創作活動の原体験は藤子不二雄作品にある」と語っています。<br>
               本書「フジコ・スピリット」では、SNSで活動される藤子作品を愛してやまない11名の創作家による漫画・イラスト・小説をオムニバス形式で掲載させていただきました。
             </p>
