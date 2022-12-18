@@ -166,10 +166,8 @@
   -->
   </div>
   <div class="scroll-smooth my-8">
-    <div 
-      id="distributions"
-    >
-      <div class="my-12 text-center lign-middle">
+    <div id="distributions">
+      <div class="mx-5 my-12 text-center lign-middle">
         <h1>
            <span class="text-3xl items-center font-medium">その他の頒布物</span>
         </h1>
