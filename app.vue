@@ -175,16 +175,16 @@
         </h1>
         <div class="flex justify-center items-center align-middle">
           <div 
-            class="mx-6 grid grid-cols-1 md:grid-cols-2 items-center align-middle"
+            class="mx-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch align-middle"
           >
             <div class=
-              "max-w-md my-6 mx-10 h-128 rounded overflow-hidden shadow-lg" 
+              "max-w-md my-6 mx-5 rounded overflow-hidden shadow-lg" 
               v-for="(item, index) in contentArr"
               v-bind:key="index"
             > 
               <a :href="item.url" target=”_blank”>
                 <img 
-                  class="w-full h-84 object-cover"
+                  class="w-full h-84 max-h-84 object-cover"
                   :src="getImageUrl(item.src)" 
                   :alt="item.name"
                 />
@@ -196,7 +196,10 @@
                 <p class="text-gray-700 text-sm text-left">
                   {{item.description}}
                 </p>
-                <p class="text-gray-700 text-sm text-left mt-2">
+                <p 
+                  class="text-gray-700 text-sm text-left mt-2"
+                  v-if="item.subdescription"
+                >
                   {{item.subdescription}}
                 </p>
                 <p class="text-gray-700 text-sm text-left">
@@ -360,10 +363,22 @@ export default defineComponent({
     ]
     
     const contentArr = [
-       {
+    {
         "id": 1,
+        "name": "夏色",
+        "description": "枕さん (@makura8711)による、Twitterに掲載した夏がテーマのイラストをポストカードにしました。1セット3枚入り。",
+        "subdescription": "",
+        "src": "postcard",
+        "url": "https://twitter.com/makura8711/status/1604460429945999362",
+        "new": true,
+        "size": "ポストカード",
+        "pages": "",
+        "price": "100円"
+       },
+       {
+        "id": 2,
         "name": "THE BOOK OF CIRCLES",
-        "description": "望月田吾作によるフルカラードラえもんイラスト総集編",
+        "description": "望月田吾作 (@mt_tg)によるフルカラードラえもんイラスト総集編",
         "subdescription": "2018年-2022年に描かれた「ドラえもん」を中心としたイラストを収録。再録作も適宜加筆修正しています",
         "src": "book1",
         "url": "https://www.pixiv.net/artworks/103332022",
@@ -373,9 +388,9 @@ export default defineComponent({
         "price": "800円"
        },
        {
-        "id": 2,
+        "id": 3,
         "name": "Perfect Blue",
-        "description": "C93で頒布したフルカラードラえもんイラスト本",
+        "description": "望月田吾作 (@mt_tg)がC93で頒布したフルカラードラえもんイラスト本",
         "subdescription": "2017年までに描かれた「青背景ドラえもん」を中心としたイラストを収録",
         "src": "book2",
         "url": "https://www.pixiv.net/artworks/66256659",
