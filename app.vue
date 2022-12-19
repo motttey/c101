@@ -430,21 +430,19 @@ export default defineComponent({
     }
 
     // https://stackoverflow.com/questions/66419471/vue-3-vite-dynamic-img-src
-    const getUrl = (path: string) => {
-      const imageUrl = new URL(path, import.meta.url).href
+    const getImageUrl = (src: string) => {
+      const imageUrl = new URL(`./assets/${src}.jpg`, import.meta.url).href
       return imageUrl
     }
 
-    const getImageUrl = (src: string) => {
-      return getUrl(`./assets/${src}.jpg`)
-    }
-
     const getAuthorImageUrl = (src: string) => {
-      return getUrl(`./assets/authors/${src}.jpg`)
+      const imageUrl = new URL(`./assets/authors/${src}.jpg`, import.meta.url).href
+      return imageUrl
     }
 
     const getAuthorAltImageUrl = (src: string) => {
-      return getUrl(`./assets/authors-alt/${src}.jpg`)
+      const imageUrl = new URL(`./assets/authors-alt/${src}.jpg`, import.meta.url).href
+      return imageUrl
     }
 
     return {
