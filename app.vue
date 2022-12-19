@@ -101,7 +101,7 @@
     >
       <div class="my-4 text-center lign-middle">
         <h1>
-           <span class="text-2xl md:text-3xl items-center font-medium">参加者一覧</span>
+          <span class="text-2xl md:text-3xl items-center font-medium">参加者一覧</span>
         </h1>
       </div>
       <div class="flex justify-center items-center align-middle">
@@ -115,8 +115,12 @@
           >
             <img 
               class="w-full h-48 object-cover"
-              :src="getAuthorImageUrl(item.src)" 
+              :src="(isHovered) ? getAuthorAltImageUrl(item.src) : getAuthorImageUrl(item.src)" 
               :alt="item.name"
+              @mouseover="isHovered = true"
+              @mouseout="isHovered = false"
+              @touchstart="isHovered = true"
+              @touchend="isHovered = false"
             />
             <div class="mx-7 mt-5">
               <div class="font-bold text-xl mb-2">{{item.name}}</div>
@@ -263,6 +267,7 @@
 export default defineComponent({
   async setup() {
     const currentIndex = ref(0)
+    const isHovered = ref(false)
     const authorArr = [
        {
         "id": 1,
@@ -425,25 +430,34 @@ export default defineComponent({
     }
 
     // https://stackoverflow.com/questions/66419471/vue-3-vite-dynamic-img-src
-    const getImageUrl = (src: string) => {
-      const imageUrl = new URL(`./assets/${src}.jpg`, import.meta.url).href
+    const getUrl = (path: string) => {
+      const imageUrl = new URL(path, import.meta.url).href
       return imageUrl
     }
 
+    const getImageUrl = (src: string) => {
+      return getUrl(`./assets/${src}.jpg`)
+    }
+
     const getAuthorImageUrl = (src: string) => {
-      const imageUrl = new URL(`./assets/authors/${src}.jpg`, import.meta.url).href
-      return imageUrl
+      return getUrl(`./assets/authors/${src}.jpg`)
+    }
+
+    const getAuthorAltImageUrl = (src: string) => {
+      return getUrl(`./assets/authors-alt/${src}.jpg`)
     }
 
     return {
       authorArr,
       contentArr,
+      isHovered,
       currentIndex,
       currentIndexRange,
       scrollToTop,
       handleKeyLeft,
       getImageUrl,
-      getAuthorImageUrl
+      getAuthorImageUrl,
+      getAuthorAltImageUrl
     }
   },
 })
