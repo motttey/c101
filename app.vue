@@ -7,6 +7,7 @@
           class="text-gray-800 p-2 hover:text-blue-400 bg-white/50 rounded transition"
       >
         <button 
+          id="scrollToTopButton"
           v-on:click="scrollToTop"
         >
           Scroll to top
@@ -166,7 +167,7 @@
         </h1>
         <div class="flex justify-center items-center align-middle">
           <div 
-            class="mx-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch align-middle"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch align-middle"
           >
             <div class=
               "max-w-sm my-6 mx-5 rounded overflow-hidden shadow-lg" 
@@ -180,7 +181,7 @@
                   :alt="item.name"
                 />
               </a>
-              <div class="mx-7 mt-5">
+              <div class="mx-5 mt-5">
                 <div class="font-bold text-lg mb-2 text-left">
                   {{item.name}}
                 </div>
