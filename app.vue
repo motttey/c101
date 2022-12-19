@@ -19,27 +19,20 @@
       id="abstract"
     >
       <div class="grid grid-cols-1 sm:grid-cols-2">
-        <div class="h-96 sm:h-screen items-center text-center">
+        <div class="h-72 sm:h-screen items-center text-center">
           <img 
-            class="w-full h-full sm:h-screen object-bottom object-cover"
+            class="w-full h-full sm:h-screen object-center object-cover"
             loading="lazy"
             src="~/assets/FS_hyousi_middle.jpg" 
             alt="cover"
           />
         </div>
         <div class="p-6 mx-8 my-6 items-center align-middle bg-[url('~/assets/fs.svg')] bg-contain bg-no-repeat max-w-none">
-          <h2 class="text-xl md:text-2xl font-bold">藤子不二雄オマージュマガジン</h2>
+          <h2 class="text-lg md:text-2xl font-bold">藤子不二雄オマージュマガジン</h2>
           <h1 class="text-2xl md:text-3xl font-bold">フジコ・スピリット</h1>
-          <p class="text-right text-lg md:text-xl font-semibold">by 
+          <p class="text-right text-md md:text-lg font-semibold">by 
             <a class="text-blue-600" href="https://webcatalog-free.circle.ms/Circle/16802791">カンヅメカン</a>
           </p>
-          <!--
-          <div class="bg-local">
-            <h1>
-              <span class="text-[128px]">F.S</span>
-            </h1>
-          </div>
-          --->
           <blockquote class="text-md text-gray-900 dark:text-white my-10">
             <svg 
               aria-hidden="true"
@@ -54,7 +47,7 @@
               日本を代表するトップクリエイターの多くは、インタビュー等を通して「自分の創作活動の原体験は藤子不二雄作品にある」と語っています。<br>
               本書「フジコ・スピリット」では、SNSで活動される藤子作品を愛してやまない11名の創作家による漫画・イラスト・小説をオムニバス形式で掲載させていただきました。
             </p>
-            <p class="text-right font-bold">
+            <p class="text-right text-md font-bold">
               ― 矢島ともあき (<a class="text-blue-600" href="https://twitter.com/yjmtomoaki" target="_blank">@yjmtomoaki</a>)
             </p>
           </blockquote>
@@ -167,7 +160,7 @@
   </div>
   <div class="scroll-smooth my-8">
     <div id="distributions">
-      <div class="mx-5 my-12 text-center lign-middle">
+      <div class="mx-5 md:mx-15 my-12 text-center lign-middle">
         <h1>
            <span class="text-3xl items-center font-medium">その他の頒布物</span>
         </h1>
@@ -176,7 +169,7 @@
             class="mx-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch align-middle"
           >
             <div class=
-              "max-w-md my-6 mx-5 rounded overflow-hidden shadow-lg" 
+              "max-w-sm my-6 mx-5 rounded overflow-hidden shadow-lg" 
               v-for="(item, index) in contentArr"
               v-bind:key="index"
             > 
