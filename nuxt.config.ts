@@ -21,7 +21,6 @@ export default defineNuxtConfig({
           { name: 'viewport', content: 'width=device-width, initial-scale=1' },
           { name: 'copyright', content: '2020 SAMPLE Co., Ltd.' },
           { hid: 'viewport', name: 'viewport', content: 'width=device-width, initial-scale=1' },
-          { hid: 'robots', name: 'robots', content: 'index, follow'},
           { hid: 'author', property: 'author', content: '望月田吾作' },
           { hid: 'keywords', property: 'keywords', content: 'C101,コミックマーケット101,合同誌,ドラえもん,藤子不二雄,コミケ,矢島ともあき,望月田吾作' },
           { hid: 'description', name: 'description', content: 'コミックマーケット101 サークル「カンヅメカン」によるドラえもんや一次創作合同の紹介ページ' },
