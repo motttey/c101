@@ -62,7 +62,7 @@
           </h2>
           <ul class="space-y-1 max-w-md text-sm list-disc list-inside">
             <li>
-              イベント: コミックマーケット101 (C101)
+              コミックマーケット101 (C101)
             </li>
             <li>
               スペース: <span class="font-semibold">1日目 東ハ-50a</span>
@@ -96,9 +96,7 @@
     -->
   </div>
   <div class="scroll-smooth my-8">
-    <div 
-      id="authors"
-    >
+    <div id="authors">
       <div class="my-4 text-center lign-middle">
         <h1>
           <span class="text-2xl md:text-3xl items-center font-medium">参加者一覧</span>
@@ -115,12 +113,12 @@
           >
             <img 
               class="w-full h-48 object-cover"
-              :src="(isHovered) ? getAuthorAltImageUrl(item.src) : getAuthorImageUrl(item.src)" 
+              :src="(hoveredArr[index]) ? getAuthorAltImageUrl(item.src) : getAuthorImageUrl(item.src)" 
               :alt="item.name"
-              @mouseover="isHovered = true"
-              @mouseout="isHovered = false"
-              @touchstart="isHovered = true"
-              @touchend="isHovered = false"
+              @mouseover="hoveredArr[index] = true"
+              @mouseout="hoveredArr[index] = false"
+              @touchstart="hoveredArr[index] = true"
+              @touchend="hoveredArr[index] = false"
             />
             <div class="mx-7 mt-5">
               <div class="font-bold text-xl mb-2">{{item.name}}</div>
@@ -267,7 +265,7 @@
 export default defineComponent({
   async setup() {
     const currentIndex = ref(0)
-    const isHovered = ref(false)
+    // const isHovered = ref(false)
     const authorArr = [
        {
         "id": 1,
@@ -398,6 +396,8 @@ export default defineComponent({
        },
     ]
 
+    const hoveredArr = ref(authorArr.map((_) => false));
+
     const handleKeyLeft = () => {
       console.log("left");
       if (currentIndex.value < authorArr.length - 1) {
@@ -448,7 +448,7 @@ export default defineComponent({
     return {
       authorArr,
       contentArr,
-      isHovered,
+      hoveredArr,
       currentIndex,
       currentIndexRange,
       scrollToTop,
