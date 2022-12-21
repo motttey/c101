@@ -25,7 +25,7 @@
             class="w-full h-full sm:h-screen object-center object-cover"
             loading="lazy"
             src="~/assets/FS_hyousi_middle.jpg" 
-            alt="cover"
+            alt="FS表紙画像"
           />
         </div>
         <div class="p-6 mx-8 my-6 items-center align-middle bg-[url('~/assets/fs.svg')] bg-contain bg-no-repeat max-w-none">
@@ -55,7 +55,7 @@
           <img 
             class="my-4 items-center text-center max-w-sm w-full object-full"
             src="~/assets/hyoushi.jpg" 
-            alt="表紙/裏表紙"
+            alt="FSのと表紙/裏表紙"
           />
           <h2 class="my-4 text-xl md:text-2xl font-medium">
             詳細情報
@@ -239,7 +239,7 @@
         class="w-screen max-w-screen-xl h-screen object-cover"
         loading="lazy"
         src="~/assets/map.jpg" 
-        alt="cover"
+        alt="ドラえもんが空を飛んでいる背景画像"
       />
       <!--
       <iframe 
