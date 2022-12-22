@@ -13,7 +13,6 @@ export default defineNuxtConfig({
     head: {
       htmlAttrs: {
         lang: 'ja',
-        prefix: 'og: http://ogp.me/ns# twitter: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#”',
       },
       title: '藤子不二雄オマージュマガジン フジコ・スピリット',
       meta: [
@@ -30,7 +29,7 @@ export default defineNuxtConfig({
         { hid: 'og:url', property: 'og:url', content: 'https://motttey.github.io/c101/' },
         { hid: 'og:site-name', property: 'og:site_name', content: '藤子不二雄オマージュマガジン フジコ・スピリット' },
         { hid: 'og:title', property: 'og:title', content: '藤子不二雄オマージュマガジン フジコ・スピリット' },
-        { hid: 'og:type', property: 'og:type', content: 'website' },
+        { hid: 'og:type', property: 'og:type', content: 'article' },
         { hid: 'og:description', property: 'og:description', content: 'コミックマーケット101 サークル「カンヅメカン」によるドラえもんや一次創作合同の紹介ページ' },
         { hid: 'og:image', property: 'og:image', content: 'https://motttey.github.io/c101/_nuxt/hyoushi.d0bb9595.jpg' }
       ],
