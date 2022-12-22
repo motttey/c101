@@ -115,6 +115,7 @@
               class="w-full h-48 object-cover"
               :src="(hoveredArr[index]) ? getAuthorAltImageUrl(item.src) : getAuthorImageUrl(item.src)" 
               :alt="item.name"
+              loading="lazy"
               @mouseover="hoveredArr[index] = true"
               @mouseout="hoveredArr[index] = false"
               @touchstart="hoveredArr[index] = true"
@@ -181,6 +182,7 @@
                   class="w-full h-84 max-h-84 object-cover"
                   :src="getImageUrl(item.src)" 
                   :alt="item.name"
+                  loading="lazy"
                 />
               </a>
               <div class="mx-5 mt-5">
