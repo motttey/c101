@@ -80,20 +80,6 @@
         </div>
       </div>
     </div>
-    <!--
-    <div 
-      class="relative bottom-1 left-1 flex justify-center my-4 pb-3 pr-5 transition"
-    >
-      <a
-        class="text-gray-800 p-2 hover:text-blue-400 bg-gray-200/50 rounded transition"
-        href="#authors"
-      >
-        <button>
-            参加者一覧
-        </button>
-      </a>
-    </div>
-    -->
   </div>
   <div class="scroll-smooth my-8">
     <div id="authors">
@@ -147,20 +133,6 @@
         </div>
       </div>
     </div>
-    <!--
-    <div
-      class="relative bottom-1 left-1 flex justify-center my-4 pb-3 pr-5 transition"
-    >
-      <a
-        class="text-gray-800 p-2 hover:text-blue-400 bg-gray-200/50 rounded transition"
-        href="#access"
-      >
-        <button class="rounded-full">
-          スペース詳細
-        </button>
-      </a>
-  </div>
-  -->
   </div>
   <div class="scroll-smooth my-8">
     <div id="distributions">
@@ -266,8 +238,7 @@
 <script lang="ts">
 export default defineComponent({
   async setup() {
-    const currentIndex = ref(0)
-    // const isHovered = ref(false)
+    // const currentIndex = ref(0)
     const authorArr = [
        {
         "id": 1,
@@ -399,7 +370,8 @@ export default defineComponent({
     ]
 
     const hoveredArr = ref(authorArr.map((_) => false));
-
+    
+    /*
     const handleKeyLeft = () => {
       console.log("left");
       if (currentIndex.value < authorArr.length - 1) {
@@ -408,7 +380,6 @@ export default defineComponent({
         currentIndex.value = 0
       }
     }
-    
     const currentIndexRange = computed(() => {
       const retVal = []
       const minus = currentIndex.value - 1;
@@ -423,6 +394,7 @@ export default defineComponent({
       else retVal.push(0)
       return retVal;
     })
+    */
     
     const scrollToTop = () => {
       window.scrollTo({
@@ -451,10 +423,7 @@ export default defineComponent({
       authorArr,
       contentArr,
       hoveredArr,
-      currentIndex,
-      currentIndexRange,
       scrollToTop,
-      handleKeyLeft,
       getImageUrl,
       getAuthorImageUrl,
       getAuthorAltImageUrl
