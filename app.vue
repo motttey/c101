@@ -22,7 +22,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2">
         <div class="h-72 sm:h-screen items-center text-center">
           <img 
-            class="w-full h-full sm:h-screen object-center object-cover"
+            class="cover-img w-full h-full sm:h-screen object-center object-cover"
             loading="lazy"
             src="~/assets/FS_hyousi_middle.jpg" 
             alt="FS表紙画像"
@@ -98,7 +98,7 @@
             v-bind:key="index"
           >
             <img 
-              class="w-full h-48 object-cover"
+              class="author-img w-full h-48 object-cover"
               :src="(hoveredArr[index]) ? getAuthorAltImageUrl(item.src) : getAuthorImageUrl(item.src)" 
               :alt="item.name"
               loading="lazy"
@@ -137,9 +137,7 @@
   <div class="scroll-smooth my-8">
     <div id="distributions">
       <div class="mx-5 md:mx-15 my-12 text-center lign-middle">
-        <h1>
-           <span class="text-3xl items-center font-medium">その他の頒布物</span>
-        </h1>
+        <h1 class="text-3xl items-center font-medium">その他の頒布物</h1>
         <div class="flex justify-center items-center align-middle">
           <div 
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch align-middle"
@@ -151,7 +149,7 @@
             > 
               <a :href="item.url" target=”_blank”>
                 <img 
-                  class="w-full h-84 max-h-84 object-cover"
+                  class="publish-content-img w-full h-84 max-h-84 object-cover"
                   :src="getImageUrl(item.src)" 
                   :alt="item.name"
                   loading="lazy"
@@ -210,7 +208,7 @@
         <p class="text-2xl md:text-3xl text-white font-medium">東5ホール ハ-50a 「カンヅメカン」</p>
       </div>
       <img 
-        class="w-screen max-w-screen-xl h-screen object-cover"
+        class="place-doraemon-img w-screen max-w-screen-xl h-screen object-cover"
         loading="lazy"
         src="~/assets/map.jpg" 
         alt="ドラえもんが空を飛んでいる背景画像"
