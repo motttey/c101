@@ -120,13 +120,18 @@
                 class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
                 v-if="item.twitter"
               >
-                <a :href="item.twitter">Twitter</a>
+                <a :href="item.twitter">
+                  <font-awesome-icon icon="fa-brands fa-twitter" />
+                  Twitter</a>
               </span>
               <span 
                 class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
                 v-if="item.pixiv"
               >
-                <a :href="item.pixiv">Pixiv</a>
+                <a :href="item.pixiv">
+                  <font-awesome-icon :icon="['fas','image']" />
+                  Pixiv
+                </a>
               </span>
             </div>
           </div>
