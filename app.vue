@@ -31,7 +31,7 @@
         <div class="p-6 mx-8 my-6 items-center align-middle bg-[url('~/assets/fs.svg')] bg-contain bg-no-repeat max-w-none">
           <h2 class="text-lg md:text-2xl font-bold">藤子不二雄オマージュマガジン</h2>
           <h1 class="text-2xl md:text-3xl font-bold">フジコ・スピリット</h1>
-          <p class="text-right text-md md:text-lg font-semibold">by 
+          <p class="text-right text-md md:text-lg font-semibold max-w-lg">by 
             <a class="text-blue-600" href="https://webcatalog-free.circle.ms/Circle/16802791">カンヅメカン</a>
           </p>
           <blockquote class="text-md text-gray-900 dark:text-white my-10">
@@ -48,7 +48,7 @@
               日本を代表するトップクリエイターの多くは、インタビュー等を通して「自分の創作活動の原体験は藤子不二雄作品にある」と語っています。<br>
               本書「フジコ・スピリット」では、SNSで活動される藤子作品を愛してやまない11名の創作家による漫画・イラスト・小説をオムニバス形式で掲載させていただきました。
             </p>
-            <p class="text-right text-md font-bold">
+            <p class="text-right text-md font-bold max-w-lg">
               ― 矢島ともあき (<a class="text-blue-600" href="https://twitter.com/yjmtomoaki" target="_blank">@yjmtomoaki</a>)
             </p>
           </blockquote>
@@ -92,8 +92,7 @@
         <div 
           class="mx-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center align-middle"
         >
-          <div class=
-            "max-w-sm my-6 mx-4 rounded overflow-hidden shadow-lg" 
+          <div class="max-w-sm my-6 mx-4 rounded overflow-hidden shadow-lg" 
             v-for="(item, index) in authorArr"
             v-bind:key="index"
           >
