@@ -175,6 +175,9 @@
                 <p class="text-gray-700 text-sm text-left">
                   <a class="text-blue-600" :href="item.url" target=”_blank”>[詳細情報]</a>
                 </p>
+                <p class="text-gray-700 text-sm text-left" v-if="item.onlineOrderUrl">
+                  <a class="text-blue-600" :href="item.onlineOrderUrl" target=”_blank”>[オンライン販売]</a>
+                </p>
               </div>
               <div class="px-6 pt-4 pb-2 text-left">
                 <span 
@@ -343,7 +346,8 @@ export default defineComponent({
         "new": true,
         "size": "ポストカード",
         "pages": "",
-        "price": "100円"
+        "price": "100円",
+        "onlineOrderUrl": ""
        },
        {
         "id": 2,
@@ -355,7 +359,8 @@ export default defineComponent({
         "new": true,
         "size": "B5",
         "pages": "36ページ",
-        "price": "800円"
+        "price": "800円",
+        "onlineOrderUrl": "https://motitago.booth.pm/items/4441457"
        },
        {
         "id": 3,
@@ -367,7 +372,8 @@ export default defineComponent({
         "new": false,
         "size": "B5",
         "pages": "32ページ",
-        "price": "700円"
+        "price": "700円",
+        "onlineOrderUrl": "https://motitago.booth.pm/items/4441438"
        },
     ]
 
