@@ -15,6 +15,12 @@
       </div>
   </div>
   <div class="scroll-smooth">
+    <div class="bg-blue-100 border-t-4 border-blue-500 text-gray-700 px-4 py-3 my-2" role="alert">
+      <p class="font-bold">カンヅメカンからのお知らせ</p>
+      <p class="text-sm">望月によるドラえもん本の通販を開始しました。
+        <a class="text-blue-600" href="https://motitago.booth.pm/">[BOOTH]</a>より購入よろしくお願いします。
+      </p>
+    </div>
     <div 
       class="flex flex-row justify-center items-center"
       id="abstract"
