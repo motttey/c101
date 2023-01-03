@@ -84,8 +84,8 @@
             </li>
             <li>
               通販: <span class="font-semibold">
-                <a class="text-blue-600" href="https://motitago.booth.pm/">[BOOTH]</a>
-                (送料別)</span>
+                <a class="text-blue-600" href="https://yjmtomoaki.booth.pm/items/4446490">[BOOTH]</a>
+              </span>
             </li>
           </ul>
         </div>
