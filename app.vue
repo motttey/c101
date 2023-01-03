@@ -17,8 +17,11 @@
   <div class="scroll-smooth">
     <div class="bg-blue-100 border-t-4 border-blue-500 text-gray-700 px-4 py-3 my-2" role="alert">
       <p class="font-bold">カンヅメカンからのお知らせ</p>
+      <p class="text-sm">FSの通販を開始しました。
+        <a class="text-blue-600" href="https://yjmtomoaki.booth.pm/">[矢島ともあきのBOOTH]</a>より購入よろしくお願いします。
+      </p>
       <p class="text-sm">望月によるドラえもん本の通販を開始しました。
-        <a class="text-blue-600" href="https://motitago.booth.pm/">[BOOTH]</a>より購入よろしくお願いします。
+        <a class="text-blue-600" href="https://motitago.booth.pm/">[望月田吾作のBOOTH]</a>より購入よろしくお願いします。
       </p>
     </div>
     <div 
@@ -71,16 +74,18 @@
               コミックマーケット101 (C101)
             </li>
             <li>
-              スペース: <span class="font-semibold">1日目 東ハ-50a</span>
-            </li>
-            <li>
-              サークル: <span class="font-semibold">カンヅメカン</span>
+              頒布場所: <span class="font-semibold">1日目 東ハ-50a カンヅメカン</span>
             </li>
             <li>
               頒布価格: <span class="font-semibold">500円</span>
             </li>
             <li>
               内容: <span class="font-semibold">A5 48ページ</span>
+            </li>
+            <li>
+              通販: <span class="font-semibold">
+                <a class="text-blue-600" href="https://motitago.booth.pm/">[BOOTH]</a>
+                (送料別)</span>
             </li>
           </ul>
         </div>
