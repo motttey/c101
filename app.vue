@@ -3,16 +3,14 @@
       ref="scrollTopButton"
       class="fixed w-full flex justify-end bottom-0 pb-3 pr-5 transition"
   >
-      <div
-          class="text-gray-800 p-2 hover:text-blue-400 bg-white/50 rounded transition"
+    <div class="text-gray-800 p-2 hover:text-blue-400 bg-white/50 rounded transition">
+      <button 
+        id="scrollToTopButton"
+        v-on:click="scrollToTop"
       >
-        <button 
-          id="scrollToTopButton"
-          v-on:click="scrollToTop"
-        >
-          Scroll to top
-        </button>
-      </div>
+        Scroll to top
+      </button>
+    </div>
   </div>
   <div class="scroll-smooth">
     <div class="bg-blue-100 border-t-4 border-blue-500 text-gray-700 px-4 py-3 my-2" role="alert">
@@ -254,96 +252,95 @@
 <script lang="ts">
 export default defineComponent({
   async setup() {
-    // const currentIndex = ref(0)
     const authorArr = [
-       {
+      {
         "id": 1,
         "name": "あんじゅ",
         "description": "説明1",
         "twitter": "https://twitter.com/apple_pie_0321",
         "src": "01",
         "pixiv": "https://www.pixiv.net/users/4036156"
-       },
-       {
+      },
+      {
         "id": 2,
         "name": "イセ",
         "description": "説明2",
         "twitter": "https://twitter.com/tasu_hiku_",
         "src": "02",
         "pixiv": "https://www.pixiv.net/users/3014124"
-       },
-       {
+      },
+      {
         "id": 3,
         "name": "タクえもん",
         "description": "説明3",
         "twitter": "https://twitter.com/DoraTakubou",
         "src": "03",
         "pixiv": "https://www.pixiv.net/users/11660552"
-       },
-       {
+      },
+      {
         "id": 4,
         "name": "ツイートおじさん",
         "description": "説明4",
         "twitter": "https://twitter.com/co9EZOLIX4dRRG0",
         "src": "04",
         "pixiv": "https://www.pixiv.net/users/12512382"
-       },       
-       {
+      },       
+      {
         "id": 5,
         "name": "とりか",
         "description": "説明5",
         "twitter": "https://twitter.com/t0rika",
         "src": "05",
         "pixiv": "https://www.pixiv.net/users/2638861"
-       },
-       {
+      },
+      {
         "id": 6,
         "name": "名無しのゴンスケ",
         "description": "説明6",
         "twitter": "https://twitter.com/nanashigonsuke",
         "src": "06",
         "pixiv": "https://www.pixiv.net/users/45100114"
-       },
-       {
+      },
+      {
         "id": 7,
         "name": "マサえもん",
         "description": "説明7",
         "twitter": "https://twitter.com/masa7819",
         "src": "07",
         "pixiv": "https://www.pixiv.net/users/3942792"
-       },
-       {
+      },
+      {
         "id": 8,
         "name": "枕さん",
         "description": "説明8",
         "twitter": "https://twitter.com/makura8711",
         "src": "08",
         "pixiv": "https://www.pixiv.net/users/3106182"
-       },
-       {
+      },
+      {
         "id": 9,
         "name": "望月田吾作",
         "description": "説明9",
         "twitter": "https://twitter.com/mt_tg",
         "src": "09",
         "pixiv": "https://www.pixiv.net/users/415546"
-       },
-       {
+      },
+      {
         "id": 10,
         "name": "矢島ともあき",
         "description": "説明10",
         "twitter": "https://twitter.com/yjmtomoaki",
         "src": "10",
         "pixiv": "https://www.pixiv.net/users/6451424"
-       },
-       {
+      },
+      {
         "id": 11,
         "name": "楽来一知",
         "description": "説明11",
         "twitter": "https://twitter.com/rakurai_66UFO",
         "src": "11",
         "pixiv": "https://www.pixiv.net/users/474750"
-       }
+      }
     ]
     
     const contentArr = [
@@ -389,31 +386,6 @@ export default defineComponent({
     ]
 
     const hoveredArr = ref(authorArr.map((_) => false));
-    
-    /*
-    const handleKeyLeft = () => {
-      console.log("left");
-      if (currentIndex.value < authorArr.length - 1) {
-        currentIndex.value++
-      } else {
-        currentIndex.value = 0
-      }
-    }
-    const currentIndexRange = computed(() => {
-      const retVal = []
-      const minus = currentIndex.value - 1;
-      const plus = currentIndex.value + 1;
-
-      if (minus >= 0) retVal.push(minus);
-      else retVal.push(authorArr.length - 1)
-
-      retVal.push(currentIndex.value)
-
-      if (plus < authorArr.length) retVal.push(plus);
-      else retVal.push(0)
-      return retVal;
-    })
-    */
     
     const scrollToTop = () => {
       window.scrollTo({
