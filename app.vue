@@ -13,10 +13,16 @@
     </div>
   </div>
   <div class="scroll-smooth">
+    <div class="bg-blue-100 border-t-4 border-red-500 text-gray-700 px-4 py-3 my-2" role="alert">
+      <p class="font-bold">カンヅメカンからのお知らせ2</p>
+      <p class="text-sm">FSの第二号をC103で出版しました!
+        <a class="text-blue-600" href="https://yjmtomoaki.booth.pm/items/5330491">[矢島ともあきのBOOTH]</a>より購入よろしくお願いします。
+      </p>
+    </div>
     <div class="bg-blue-100 border-t-4 border-blue-500 text-gray-700 px-4 py-3 my-2" role="alert">
       <p class="font-bold">カンヅメカンからのお知らせ</p>
       <p class="text-sm">FSの通販を開始しました。
-        <a class="text-blue-600" href="https://yjmtomoaki.booth.pm/">[矢島ともあきのBOOTH]</a>より購入よろしくお願いします。
+        <a class="text-blue-600" href="https://yjmtomoaki.booth.pm/items/4446490">[矢島ともあきのBOOTH]</a>より購入よろしくお願いします。
       </p>
       <p class="text-sm">望月によるドラえもん本の通販を開始しました。
         <a class="text-blue-600" href="https://motitago.booth.pm/">[望月田吾作のBOOTH]</a>より購入よろしくお願いします。
