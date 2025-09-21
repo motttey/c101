@@ -8,14 +8,13 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "^3.9.0"
+    "nuxt": "^4.0.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.5.0",
-    "@fortawesome/free-brands-svg-icons": "^6.5.0",
-    "@fortawesome/free-solid-svg-icons": "^6.5.0",
-    "@fortawesome/vue-fontawesome": "^3.0.5",
-    "@nuxtjs/tailwindcss": "^6.10.3",
-    "yarn-audit-fix": "^9.3.6"
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/vue-fontawesome": "^3.0.8",
+    "@nuxtjs/tailwindcss": "^6.12.0"
   }
 }
