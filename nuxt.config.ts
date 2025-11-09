@@ -1,4 +1,4 @@
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
+// https://nuxt.com/docs/4.x/api/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-09-21',
   ssr: false,
@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss'
   ],
   app:{
-    baseURL: '/c101-landing/',
+    baseURL: '/',
     head: {
       link: [
         { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
