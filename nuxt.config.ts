@@ -15,7 +15,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'ja',
       },
-      title: '藤子不二雄オマージュマガジン フジコ・スピリット',
+      title: '藤子不二雄オマージュマガジン フジコ・スピリット 第0号',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -23,10 +23,10 @@ export default defineNuxtConfig({
         { key: 'tw-card', name: 'twitter:card', content: 'summary_large_image'},
         { key: 'tw-site', name: 'twitter:site', content: '@mt_tg' },
         { key: 'og:url', property: 'og:url', content: 'https://motttey.github.io/c101/' },
-        { key: 'og:site-name', property: 'og:site_name', content: '藤子不二雄オマージュマガジン フジコ・スピリット' },
-        { key: 'og:title', property: 'og:title', content: '藤子不二雄オマージュマガジン フジコ・スピリット' },
+        { key: 'og:site-name', property: 'og:site_name', content: '藤子不二雄オマージュマガジン フジコ・スピリット 第0号' },
+        { key: 'og:title', property: 'og:title', content: '藤子不二雄オマージュマガジン フジコ・スピリット 第0号' },
         { key: 'og:type', property: 'og:type', content: 'article' },
-        { key: 'og:description', property: 'og:description', content: 'コミックマーケット101 サークル「カンヅメカン」によるドラえもんや一次創作合同の紹介ページ' },
+        { key: 'og:description', property: 'og:description', content: 'コミックマーケット101で頒布する、サークル「カンヅメカン」によるドラえもんや一次創作合同の紹介ページ' },
         { key: 'og:image', property: 'og:image', content: 'https://motttey.github.io/c101/_nuxt/hyoushi.d0bb9595.jpg' },
         { key: 'viewport', name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { key: 'robots', name: 'robots', content: 'index, follow'},
