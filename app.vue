@@ -15,17 +15,14 @@
   <div class="scroll-smooth">
     <div class="bg-blue-100 border-t-4 border-red-500 text-gray-700 px-4 py-3 my-2" role="alert">
       <p class="font-bold">カンヅメカンからのお知らせ2</p>
-      <p class="text-sm">FSの第二号をC103で出版しました!
-        <a class="text-blue-600" href="https://yjmtomoaki.booth.pm/items/5330491">[矢島ともあきのBOOTH]</a>より購入よろしくお願いします。
+      <p class="text-sm">フジコ・スピリットの第3号をC105で頒布します! 詳細は
+        <a class="text-blue-600" href="https://x.com/yjmtomoaki/status/1999834356030787918">[矢島ともあきのX]</a>よりご確認ください.
       </p>
     </div>
-    <div class="bg-blue-100 border-t-4 border-blue-500 text-gray-700 px-4 py-3 my-2" role="alert">
+    <div class="bg-blue-100 border-t-4 border-red-500 text-gray-700 px-4 py-3 my-2" role="alert">
       <p class="font-bold">カンヅメカンからのお知らせ</p>
-      <p class="text-sm">FSの通販を開始しました。
-        <a class="text-blue-600" href="https://yjmtomoaki.booth.pm/items/4446490">[矢島ともあきのBOOTH]</a>より購入よろしくお願いします。
-      </p>
-      <p class="text-sm">望月によるドラえもん本の通販を開始しました。
-        <a class="text-blue-600" href="https://motitago.booth.pm/">[望月田吾作のBOOTH]</a>より購入よろしくお願いします。
+      <p class="text-sm">フジコ・スピリットの第2号をC103で出版しました!
+        <a class="text-blue-600" href="https://yjmtomoaki.booth.pm/items/5330491">[矢島ともあきのBOOTH]</a>より購入よろしくお願いします。
       </p>
     </div>
     <div 
@@ -59,7 +56,7 @@
             </svg>
             <p class="text-justify text-sm font-semibold max-w-lg">
               日本を代表するトップクリエイターの多くは、インタビュー等を通して「自分の創作活動の原体験は藤子不二雄作品にある」と語っています。<br>
-              本書「フジコ・スピリット」では、SNSで活動される藤子作品を愛してやまない11名の創作家による漫画・イラスト・小説をオムニバス形式で掲載させていただきました。
+              「フジコ・スピリット 第0号」では、SNSで活動される藤子作品を愛してやまない11名の創作家による漫画・イラスト・小説をオムニバス形式で掲載させていただきました。
             </p>
             <p class="text-right text-md font-bold max-w-lg">
               ― 矢島ともあき (<a class="text-blue-600" href="https://twitter.com/yjmtomoaki" target="_blank">@yjmtomoaki</a>)
