@@ -15,14 +15,14 @@
   <div class="scroll-smooth">
     <div class="bg-blue-100 border-t-4 border-red-500 text-gray-700 px-4 py-3 my-2" role="alert">
       <p class="font-bold">カンヅメカンからのお知らせ2</p>
-      <p class="text-sm">フジコ・スピリットの第3号をC105で頒布します! 詳細は
+      <p class="text-sm">フジコ・スピリットの第3号をC107で頒布します! 詳細は
         <a class="text-blue-600" href="https://x.com/yjmtomoaki/status/1999834356030787918">[矢島ともあきのX]</a>よりご確認ください.
       </p>
     </div>
     <div class="bg-blue-100 border-t-4 border-red-500 text-gray-700 px-4 py-3 my-2" role="alert">
       <p class="font-bold">カンヅメカンからのお知らせ</p>
-      <p class="text-sm">フジコ・スピリットの第2号をC103で出版しました!
-        <a class="text-blue-600" href="https://yjmtomoaki.booth.pm/items/5330491">[矢島ともあきのBOOTH]</a>より購入よろしくお願いします。
+      <p class="text-sm">フジコ・スピリットの第2号をC105で出版しました!
+        <a class="text-blue-600" href="https://yjmtomoaki.booth.pm/items/6624230">[矢島ともあきのBOOTH]</a>より購入よろしくお願いします。
       </p>
     </div>
     <div 
