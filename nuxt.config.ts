@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss'
   ],
   app:{
+    baseURL: '/c101',
     head: {
       link: [
         { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
