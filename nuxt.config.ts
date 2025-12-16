@@ -18,7 +18,7 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'copyright', content: '2020 SAMPLE Co., Ltd.' },
+        { name: 'copyright', content: '2021 Motigetsu Robot Factory.' },
         { key: 'tw-card', name: 'twitter:card', content: 'summary_large_image'},
         { key: 'tw-site', name: 'twitter:site', content: '@mt_tg' },
         { key: 'og:url', property: 'og:url', content: 'https://motttey.github.io/c101/' },
