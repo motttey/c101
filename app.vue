@@ -21,7 +21,7 @@
     </div>
     <div class="bg-blue-100 border-t-4 border-red-500 text-gray-700 px-4 py-3 my-2" role="alert">
       <p class="font-bold">カンヅメカンからのお知らせ</p>
-      <p class="text-sm">フジコ・スピリットの第2号をC105で出版しました!
+      <p class="text-sm">フジコ・スピリットの第2号をサンクリ2025Winterで出版しました!
         <a class="text-blue-600" href="https://yjmtomoaki.booth.pm/items/6624230">[矢島ともあきのBOOTH]</a>より購入よろしくお願いします。
       </p>
     </div>
