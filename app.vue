@@ -15,8 +15,8 @@
   <div class="scroll-smooth">
     <div class="bg-blue-100 border-t-4 border-red-500 text-gray-700 px-4 py-3 my-2" role="alert">
       <p class="font-bold">カンヅメカンからのお知らせ2</p>
-      <p class="text-sm">フジコ・スピリットの第3号をC107で頒布します! 詳細は
-        <a class="text-blue-600" href="https://x.com/yjmtomoaki/status/1999834356030787918">[矢島ともあきのX]</a>よりご確認ください.
+      <p class="text-sm">フジコ・スピリットの第3号をC107で頒布しました! 詳細は
+        <a class="text-blue-600" href="https://fujiko-spirit.pages.dev/">フジコスピリット公式サイト</a>よりご確認ください.
       </p>
     </div>
     <div class="bg-blue-100 border-t-4 border-red-500 text-gray-700 px-4 py-3 my-2" role="alert">
